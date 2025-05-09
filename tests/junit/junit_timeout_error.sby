@@ -1,0 +1,41 @@
+[tasks]
+syntax error
+solver error
+timeout
+
+[options]
+mode cover
+depth 1
+timeout: timeout 1
+error: expect error
+timeout: expect timeout
+
+[engines]
+~solver: smtbmc --dumpsmt2 --progress --stbv z3
+solver: smtbmc foo
+
+[script]
+read -noverific
+syntax: read -define SYNTAX_ERROR
+read -sv diophantine.sv
+prep -top diophantine
+
+[file diophantine.sv]
+module diophantine;
+	(* anyconst *) reg [15:0] a, b, c;
+
+	`ifdef SYNTAX_ERROR
+	foo
+	`endif
+
+	wire [48:0] x = a*a*a + b*b*b;
+	wire [48:0] y = c*c*c;
+
+	always @* begin
+		assume (a > 0);
+		assume (b > 0);
+		assume (c > 0);
+		assume (x == y);
+		cover (1);
+	end
+endmodule

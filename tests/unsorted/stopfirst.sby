@@ -1,0 +1,16 @@
+[options]
+mode bmc
+expect fail
+
+[engines]
+btor btormc
+
+[script]
+read -sv test.sv
+prep -top test
+
+[file test.sv]
+module test(input foo);
+always @* assert(foo);
+always @* assert(!foo);
+endmodule

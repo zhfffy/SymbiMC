@@ -1,0 +1,242 @@
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Removing directory '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Writing '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/define.sv'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestIntWriteback.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestIntWriteback.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w130_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w130_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w1_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w1_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestCSRState.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestCSRState.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w4_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w4_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w58_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w58_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestArchIntRegState.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestArchIntRegState.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w28_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w28_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w27_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w27_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestArchEvent.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestArchEvent.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w20_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w20_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestLrScEvent.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestLrScEvent.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/FormalTop.sv' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/FormalTop.sv'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w62_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w62_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w65_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w65_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w44_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w44_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w5_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w5_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/plusarg_reader.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/plusarg_reader.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/SimTop.sv' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/SimTop.sv'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w3_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w3_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w29_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w29_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestTrapEvent.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestTrapEvent.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w2_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w2_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w32_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w32_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w8_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w8_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w9_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w9_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestStoreEvent.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestStoreEvent.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w36_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w36_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/MemRWHelper.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/MemRWHelper.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/EICG_wrapper.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/EICG_wrapper.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w40_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w40_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestSnapshotCSRState.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestSnapshotCSRState.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w7_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w7_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w6_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w6_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w42_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w42_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestArchIntDelayedUpdate.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestArchIntDelayedUpdate.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w39_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w39_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/GEN_w64_toggle.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/GEN_w64_toggle.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] Copy '/home/zhulf/project/coverTasks/rtl/DifftestInstrCommit.v' to '/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src/DifftestInstrCommit.v'.
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: aiger modelchecker
+SBY 11:45:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 11:45:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: SimTop.sv:90478: Warning: Identifier `\gbl_clk' is implicitly declared.
+SBY 11:45:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: MemRWHelper.v:37: Warning: Identifier `\glb_clk' is implicitly declared.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire AXI4Fragmenter.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire AXI4RAM.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire AXI4UserYanker.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire AXI4Xbar.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire CSRFile.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DCache.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DCacheDataArray.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DelayReg.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DelayReg_1.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DelayReg_2.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DelayReg_3.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire DelayReg_4.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire FormalTop.\clock is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Frontend.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire HellaCacheArbiter.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire IBuf.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire ICache.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire MemRWHelper.\glb_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire MulDiv.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire PTW.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire PlusArgTimeout.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_1.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_10.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_11.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_12.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_13.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_14.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_15.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_16.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_17.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_18.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_19.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_2.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_20.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_21.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_22.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_23.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_24.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_25.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_26.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_27.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_28.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_29.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_3.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_30.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_31.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_32.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_33.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_34.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_35.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_36.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_37.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_38.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_39.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_4.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_40.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_41.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_42.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_43.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_44.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_47.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_48.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_49.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_5.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_50.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_51.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_52.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_53.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_54.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_6.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_7.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_8.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Queue_9.\gbl_clk is used but has no driver.
+SBY 11:45:34 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Repeater.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire Rocket.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire ShiftQueue.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire SimTop.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLB.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLB_1.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLBroadcast.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLBroadcastTracker.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLBroadcastTracker_1.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLBroadcastTracker_2.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLBroadcastTracker_3.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLFragmenter.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLToAXI4.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLXbar.\gbl_clk is used but has no driver.
+SBY 11:45:35 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: Warning: Wire TLXbar_8.\gbl_clk is used but has no driver.
+SBY 11:45:41 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] base: finished (returncode=0)
+SBY 11:45:41 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/model; yosys -ql design_prep.log design_prep.ys"
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire DCache.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire DCacheDataArray.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire FormalTop.\clock is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire ICache.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire MemRWHelper.\glb_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_1.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_10.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_11.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_12.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_13.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_14.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_15.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_16.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_17.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_18.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_19.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_2.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_20.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_21.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_22.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_23.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_24.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_25.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_26.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_27.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_28.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_29.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_3.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_30.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_31.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_32.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_33.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_34.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_35.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_36.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_37.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_38.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_39.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_4.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_40.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_41.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_42.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_43.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_44.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_47.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_48.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_49.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_5.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_50.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_51.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_52.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_53.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_54.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_6.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_7.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_8.\gbl_clk is used but has no driver.
+SBY 11:45:43 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: Warning: Wire Queue_9.\gbl_clk is used but has no driver.
+SBY 11:45:45 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] prep: finished (returncode=0)
+SBY 11:45:45 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] aig: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY 11:46:18 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] aig: finished (returncode=0)
+SBY 11:46:18 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1; /home/zhulf/modelchecker/modelchecker -findbug 49 model/design_aiger.aig"
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: finished (returncode=0)
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: Status returned by engine: FAIL
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] smt2: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1; yosys-witness aiw2yw engine_0/trace.aiw model/design_aiger.ywa engine_0/trace_aiw.yw"
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: Converting AIGER witness trace 'engine_0/trace.aiw' to Yosys witness trace 'engine_0/trace_aiw.yw'...
+SBY 11:46:27 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: Using Yosys witness AIGER map file 'model/design_aiger.ywa'
+SBY 11:46:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: Converted 30 time steps.
+SBY 11:46:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: finished (returncode=0)
+SBY 11:46:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] smt2: finished (returncode=0)
+SBY 11:46:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: starting process "cd /home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1; yosys-smtbmc -s yices --noprogress --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc --yw engine_0/trace_aiw.yw model/design_smt2.smt2"
+SBY 11:46:28 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:00  Solver: yices
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:00  Skipping step 0..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:00  Skipping step 1..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 2..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 3..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 4..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 5..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 6..
+SBY 11:46:29 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 7..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 8..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 9..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 10..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 11..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 12..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 13..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 14..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 15..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 16..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 17..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 18..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:01  Skipping step 19..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 20..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 21..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 22..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 23..
+SBY 11:46:30 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 24..
+SBY 11:46:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 25..
+SBY 11:46:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 26..
+SBY 11:46:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 27..
+SBY 11:46:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Skipping step 28..
+SBY 11:46:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:00:02  Checking assertions in step 29..
+SBY 11:47:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:01:02  waiting for solver (1 minute)
+SBY 11:51:31 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: ##   0:05:02  waiting for solver (5 minutes)
+SBY 11:52:20 [/home/zhulf/project/xiangshan/SymbiMC/benchmark/coverTasks/cover_1] engine_0: terminating process

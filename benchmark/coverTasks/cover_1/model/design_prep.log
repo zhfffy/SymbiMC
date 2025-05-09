@@ -1,0 +1,1526 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.51+41 (git sha1 0c689091e, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module TileResetDomain.
+Found 0 SCCs in module TilePRCIDomain.
+Found 0 SCCs in module TLXbar_8.
+Found 0 SCCs in module TLXbar_7.
+Found 0 SCCs in module TLXbar_6.
+Found 0 SCCs in module TLXbar_5.
+Found 0 SCCs in module TLXbar_4.
+Found 0 SCCs in module TLXbar.
+Found 0 SCCs in module TLWidthWidget_8.
+Found 0 SCCs in module TLWidthWidget_7.
+Found 0 SCCs in module TLWidthWidget_6.
+Found 0 SCCs in module TLWidthWidget_5.
+Found 0 SCCs in module TLWidthWidget_2.
+Found 0 SCCs in module TLWidthWidget.
+Found 0 SCCs in module TLToAXI4.
+Found 0 SCCs in module TLROM.
+Found 0 SCCs in module TLJbar.
+Found 0 SCCs in module TLInterconnectCoupler_8.
+Found 0 SCCs in module TLInterconnectCoupler_7.
+Found 0 SCCs in module TLInterconnectCoupler_6.
+Found 0 SCCs in module TLInterconnectCoupler_3.
+Found 0 SCCs in module TLInterconnectCoupler_2.
+Found 0 SCCs in module TLInterconnectCoupler.
+Found 0 SCCs in module TLFragmenter.
+Found 0 SCCs in module TLFIFOFixer_3.
+Found 0 SCCs in module TLFIFOFixer_2.
+Found 0 SCCs in module TLFIFOFixer.
+Found 0 SCCs in module TLBuffer_8.
+Found 0 SCCs in module TLBuffer_6.
+Found 0 SCCs in module TLBuffer_5.
+Found 0 SCCs in module TLBuffer_4.
+Found 0 SCCs in module TLBuffer_3.
+Found 0 SCCs in module TLBroadcastTracker_3.
+Found 0 SCCs in module TLBroadcastTracker_2.
+Found 0 SCCs in module TLBroadcastTracker_1.
+Found 0 SCCs in module TLBroadcastTracker.
+Found 0 SCCs in module TLBroadcast.
+Found 0 SCCs in module TLB_1.
+Found 0 SCCs in module TLB.
+Found 0 SCCs in module TLAtomicAutomata_1.
+Found 0 SCCs in module SystemBus.
+Found 0 SCCs in module SimpleClockGroupSource.
+Found 0 SCCs in module SimTop.
+Found 0 SCCs in module SimAXIMem.
+Found 0 SCCs in module ShiftQueue.
+Found 0 SCCs in module RocketTile.
+Found 0 SCCs in module Rocket.
+Found 0 SCCs in module Repeater.
+Found 0 SCCs in module RVCExpander.
+Found 0 SCCs in module Queue_9.
+Found 0 SCCs in module Queue_8.
+Found 0 SCCs in module Queue_7.
+Found 0 SCCs in module Queue_6.
+Found 0 SCCs in module Queue_54.
+Found 0 SCCs in module Queue_53.
+Found 0 SCCs in module Queue_52.
+Found 0 SCCs in module Queue_51.
+Found 0 SCCs in module Queue_50.
+Found 0 SCCs in module Queue_5.
+Found 0 SCCs in module Queue_49.
+Found 0 SCCs in module Queue_48.
+Found 0 SCCs in module Queue_47.
+Found 0 SCCs in module Queue_44.
+Found 0 SCCs in module Queue_43.
+Found 0 SCCs in module Queue_42.
+Found 0 SCCs in module Queue_41.
+Found 0 SCCs in module Queue_40.
+Found 0 SCCs in module Queue_4.
+Found 0 SCCs in module Queue_39.
+Found 0 SCCs in module Queue_38.
+Found 0 SCCs in module Queue_37.
+Found 0 SCCs in module Queue_36.
+Found 0 SCCs in module Queue_35.
+Found 0 SCCs in module Queue_34.
+Found 0 SCCs in module Queue_33.
+Found 0 SCCs in module Queue_32.
+Found 0 SCCs in module Queue_31.
+Found 0 SCCs in module Queue_30.
+Found 0 SCCs in module Queue_3.
+Found 0 SCCs in module Queue_29.
+Found 0 SCCs in module Queue_28.
+Found 0 SCCs in module Queue_27.
+Found 0 SCCs in module Queue_26.
+Found 0 SCCs in module Queue_25.
+Found 0 SCCs in module Queue_24.
+Found 0 SCCs in module Queue_23.
+Found 0 SCCs in module Queue_22.
+Found 0 SCCs in module Queue_21.
+Found 0 SCCs in module Queue_20.
+Found 0 SCCs in module Queue_2.
+Found 0 SCCs in module Queue_19.
+Found 0 SCCs in module Queue_18.
+Found 0 SCCs in module Queue_17.
+Found 0 SCCs in module Queue_16.
+Found 0 SCCs in module Queue_15.
+Found 0 SCCs in module Queue_14.
+Found 0 SCCs in module Queue_13.
+Found 0 SCCs in module Queue_12.
+Found 0 SCCs in module Queue_11.
+Found 0 SCCs in module Queue_10.
+Found 0 SCCs in module Queue_1.
+Found 0 SCCs in module Queue.
+Found 0 SCCs in module ProbePicker.
+Found 0 SCCs in module PlusArgTimeout.
+Found 0 SCCs in module PeripheryBus_1.
+Found 0 SCCs in module PTW.
+Found 0 SCCs in module OptimizationBarrier_9.
+Found 0 SCCs in module OptimizationBarrier_8.
+Found 0 SCCs in module OptimizationBarrier_3.
+Found 0 SCCs in module OptimizationBarrier_2.
+Found 0 SCCs in module OptimizationBarrier_13.
+Found 0 SCCs in module OptimizationBarrier_12.
+Found 0 SCCs in module OptimizationBarrier_11.
+Found 0 SCCs in module OptimizationBarrier_10.
+Found 0 SCCs in module OptimizationBarrier_1.
+Found 0 SCCs in module OptimizationBarrier.
+Found 0 SCCs in module MulDiv.
+Found 0 SCCs in module MemoryBus.
+Found 0 SCCs in module MemRWHelper.
+Found 0 SCCs in module ICache.
+Found 0 SCCs in module IBuf.
+Found 0 SCCs in module HellaCacheArbiter.
+Found 0 SCCs in module Frontend.
+Found 0 SCCs in module FormalTop.
+Found 0 SCCs in module FixedClockBroadcast_6.
+Found 0 SCCs in module FixedClockBroadcast_5.
+Found 0 SCCs in module FixedClockBroadcast_4.
+Found 0 SCCs in module FixedClockBroadcast_3.
+Found 0 SCCs in module FixedClockBroadcast.
+Found 0 SCCs in module ExampleFuzzSystem.
+Found 0 SCCs in module DifftestMem2P.
+Found 0 SCCs in module DelayReg_4.
+Found 0 SCCs in module DelayReg_3.
+Found 0 SCCs in module DelayReg_2.
+Found 0 SCCs in module DelayReg_1.
+Found 0 SCCs in module DelayReg.
+Found 0 SCCs in module DCacheModuleImpl_Anon_2.
+Found 0 SCCs in module DCacheModuleImpl_Anon_1.
+Found 0 SCCs in module DCacheDataArray.
+Found 0 SCCs in module DCache.
+Found 0 SCCs in module CoherenceManagerWrapper.
+Found 0 SCCs in module ClockSinkDomain.
+Found 0 SCCs in module ClockGroup_5.
+Found 0 SCCs in module ClockGroup_4.
+Found 0 SCCs in module ClockGroup_3.
+Found 0 SCCs in module ClockGroupAggregator_5.
+Found 0 SCCs in module ClockGroupAggregator_4.
+Found 0 SCCs in module ClockGroupAggregator_3.
+Found 0 SCCs in module ClockGroupAggregator.
+Found 0 SCCs in module ClockGroup.
+Found 0 SCCs in module CSRFile.
+Found 0 SCCs in module BundleBridgeNexus_6.
+Found 0 SCCs in module BundleBridgeNexus_15.
+Found 0 SCCs in module BroadcastFilter.
+Found 0 SCCs in module BankBinder.
+Found 0 SCCs in module Arbiter.
+Found 0 SCCs in module AXI4Xbar.
+Found 0 SCCs in module AXI4UserYanker.
+Found 0 SCCs in module AXI4RAM.
+Found 0 SCCs in module AXI4IdIndexer.
+Found 0 SCCs in module AXI4Fragmenter.
+Found 0 SCCs in module AXI4Buffer.
+Found 0 SCCs in module AMOALU.
+Found 0 SCCs in module ALU.
+Found 0 SCCs in module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TileResetDomain..
+Finding unused cells or wires in module \TilePRCIDomain..
+Finding unused cells or wires in module \TLXbar_8..
+Finding unused cells or wires in module \TLXbar_7..
+Finding unused cells or wires in module \TLXbar_6..
+Finding unused cells or wires in module \TLXbar_5..
+Finding unused cells or wires in module \TLXbar_4..
+Finding unused cells or wires in module \TLXbar..
+Finding unused cells or wires in module \TLWidthWidget_8..
+Finding unused cells or wires in module \TLWidthWidget_7..
+Finding unused cells or wires in module \TLWidthWidget_6..
+Finding unused cells or wires in module \TLWidthWidget_5..
+Finding unused cells or wires in module \TLWidthWidget_2..
+Finding unused cells or wires in module \TLWidthWidget..
+Finding unused cells or wires in module \TLToAXI4..
+Finding unused cells or wires in module \TLROM..
+Finding unused cells or wires in module \TLJbar..
+Finding unused cells or wires in module \TLInterconnectCoupler_8..
+Finding unused cells or wires in module \TLInterconnectCoupler_7..
+Finding unused cells or wires in module \TLInterconnectCoupler_6..
+Finding unused cells or wires in module \TLInterconnectCoupler_3..
+Finding unused cells or wires in module \TLInterconnectCoupler_2..
+Finding unused cells or wires in module \TLInterconnectCoupler..
+Finding unused cells or wires in module \TLFragmenter..
+Finding unused cells or wires in module \TLFIFOFixer_3..
+Finding unused cells or wires in module \TLFIFOFixer_2..
+Finding unused cells or wires in module \TLFIFOFixer..
+Finding unused cells or wires in module \TLBuffer_8..
+Finding unused cells or wires in module \TLBuffer_6..
+Finding unused cells or wires in module \TLBuffer_5..
+Finding unused cells or wires in module \TLBuffer_4..
+Finding unused cells or wires in module \TLBuffer_3..
+Finding unused cells or wires in module \TLBroadcastTracker_3..
+Finding unused cells or wires in module \TLBroadcastTracker_2..
+Finding unused cells or wires in module \TLBroadcastTracker_1..
+Finding unused cells or wires in module \TLBroadcastTracker..
+Finding unused cells or wires in module \TLBroadcast..
+Finding unused cells or wires in module \TLB_1..
+Finding unused cells or wires in module \TLB..
+Finding unused cells or wires in module \TLAtomicAutomata_1..
+Finding unused cells or wires in module \SystemBus..
+Finding unused cells or wires in module \SimpleClockGroupSource..
+Finding unused cells or wires in module \SimTop..
+Finding unused cells or wires in module \SimAXIMem..
+Finding unused cells or wires in module \ShiftQueue..
+Finding unused cells or wires in module \RocketTile..
+Finding unused cells or wires in module \Rocket..
+Finding unused cells or wires in module \Repeater..
+Finding unused cells or wires in module \RVCExpander..
+Finding unused cells or wires in module \Queue_9..
+Finding unused cells or wires in module \Queue_8..
+Finding unused cells or wires in module \Queue_7..
+Finding unused cells or wires in module \Queue_6..
+Finding unused cells or wires in module \Queue_54..
+Finding unused cells or wires in module \Queue_53..
+Finding unused cells or wires in module \Queue_52..
+Finding unused cells or wires in module \Queue_51..
+Finding unused cells or wires in module \Queue_50..
+Finding unused cells or wires in module \Queue_5..
+Finding unused cells or wires in module \Queue_49..
+Finding unused cells or wires in module \Queue_48..
+Finding unused cells or wires in module \Queue_47..
+Finding unused cells or wires in module \Queue_44..
+Finding unused cells or wires in module \Queue_43..
+Finding unused cells or wires in module \Queue_42..
+Finding unused cells or wires in module \Queue_41..
+Finding unused cells or wires in module \Queue_40..
+Finding unused cells or wires in module \Queue_4..
+Finding unused cells or wires in module \Queue_39..
+Finding unused cells or wires in module \Queue_38..
+Finding unused cells or wires in module \Queue_37..
+Finding unused cells or wires in module \Queue_36..
+Finding unused cells or wires in module \Queue_35..
+Finding unused cells or wires in module \Queue_34..
+Finding unused cells or wires in module \Queue_33..
+Finding unused cells or wires in module \Queue_32..
+Finding unused cells or wires in module \Queue_31..
+Finding unused cells or wires in module \Queue_30..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \Queue_29..
+Finding unused cells or wires in module \Queue_28..
+Finding unused cells or wires in module \Queue_27..
+Finding unused cells or wires in module \Queue_26..
+Finding unused cells or wires in module \Queue_25..
+Finding unused cells or wires in module \Queue_24..
+Finding unused cells or wires in module \Queue_23..
+Finding unused cells or wires in module \Queue_22..
+Finding unused cells or wires in module \Queue_21..
+Finding unused cells or wires in module \Queue_20..
+Finding unused cells or wires in module \Queue_2..
+Finding unused cells or wires in module \Queue_19..
+Finding unused cells or wires in module \Queue_18..
+Finding unused cells or wires in module \Queue_17..
+Finding unused cells or wires in module \Queue_16..
+Finding unused cells or wires in module \Queue_15..
+Finding unused cells or wires in module \Queue_14..
+Finding unused cells or wires in module \Queue_13..
+Finding unused cells or wires in module \Queue_12..
+Finding unused cells or wires in module \Queue_11..
+Finding unused cells or wires in module \Queue_10..
+Finding unused cells or wires in module \Queue_1..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \ProbePicker..
+Finding unused cells or wires in module \PlusArgTimeout..
+Finding unused cells or wires in module \PeripheryBus_1..
+Finding unused cells or wires in module \PTW..
+Finding unused cells or wires in module \OptimizationBarrier_9..
+Finding unused cells or wires in module \OptimizationBarrier_8..
+Finding unused cells or wires in module \OptimizationBarrier_3..
+Finding unused cells or wires in module \OptimizationBarrier_2..
+Finding unused cells or wires in module \OptimizationBarrier_13..
+Finding unused cells or wires in module \OptimizationBarrier_12..
+Finding unused cells or wires in module \OptimizationBarrier_11..
+Finding unused cells or wires in module \OptimizationBarrier_10..
+Finding unused cells or wires in module \OptimizationBarrier_1..
+Finding unused cells or wires in module \OptimizationBarrier..
+Finding unused cells or wires in module \MulDiv..
+Finding unused cells or wires in module \MemoryBus..
+Finding unused cells or wires in module \MemRWHelper..
+Finding unused cells or wires in module \ICache..
+Finding unused cells or wires in module \IBuf..
+Finding unused cells or wires in module \HellaCacheArbiter..
+Finding unused cells or wires in module \Frontend..
+Finding unused cells or wires in module \FormalTop..
+Finding unused cells or wires in module \FixedClockBroadcast_6..
+Finding unused cells or wires in module \FixedClockBroadcast_5..
+Finding unused cells or wires in module \FixedClockBroadcast_4..
+Finding unused cells or wires in module \FixedClockBroadcast_3..
+Finding unused cells or wires in module \FixedClockBroadcast..
+Finding unused cells or wires in module \ExampleFuzzSystem..
+Finding unused cells or wires in module \DifftestMem2P..
+Finding unused cells or wires in module \DelayReg_4..
+Finding unused cells or wires in module \DelayReg_3..
+Finding unused cells or wires in module \DelayReg_2..
+Finding unused cells or wires in module \DelayReg_1..
+Finding unused cells or wires in module \DelayReg..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_2..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_1..
+Finding unused cells or wires in module \DCacheDataArray..
+Finding unused cells or wires in module \DCache..
+Finding unused cells or wires in module \CoherenceManagerWrapper..
+Finding unused cells or wires in module \ClockSinkDomain..
+Finding unused cells or wires in module \ClockGroup_5..
+Finding unused cells or wires in module \ClockGroup_4..
+Finding unused cells or wires in module \ClockGroup_3..
+Finding unused cells or wires in module \ClockGroupAggregator_5..
+Finding unused cells or wires in module \ClockGroupAggregator_4..
+Finding unused cells or wires in module \ClockGroupAggregator_3..
+Finding unused cells or wires in module \ClockGroupAggregator..
+Finding unused cells or wires in module \ClockGroup..
+Finding unused cells or wires in module \CSRFile..
+Finding unused cells or wires in module \BundleBridgeNexus_6..
+Finding unused cells or wires in module \BundleBridgeNexus_15..
+Finding unused cells or wires in module \BroadcastFilter..
+Finding unused cells or wires in module \BankBinder..
+Finding unused cells or wires in module \Arbiter..
+Finding unused cells or wires in module \AXI4Xbar..
+Finding unused cells or wires in module \AXI4UserYanker..
+Finding unused cells or wires in module \AXI4RAM..
+Finding unused cells or wires in module \AXI4IdIndexer..
+Finding unused cells or wires in module \AXI4Fragmenter..
+Finding unused cells or wires in module \AXI4Buffer..
+Finding unused cells or wires in module \AMOALU..
+Finding unused cells or wires in module \ALU..
+Finding unused cells or wires in module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader..
+Removed 13674 unused cells and 13632 unused wires.
+<suppressed ~14675 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader..
+Finding unused cells or wires in module \ALU..
+Finding unused cells or wires in module \AMOALU..
+Finding unused cells or wires in module \AXI4Buffer..
+Finding unused cells or wires in module \AXI4Fragmenter..
+Finding unused cells or wires in module \AXI4IdIndexer..
+Finding unused cells or wires in module \AXI4RAM..
+Finding unused cells or wires in module \AXI4UserYanker..
+Finding unused cells or wires in module \AXI4Xbar..
+Finding unused cells or wires in module \Arbiter..
+Finding unused cells or wires in module \BankBinder..
+Finding unused cells or wires in module \BroadcastFilter..
+Finding unused cells or wires in module \BundleBridgeNexus_15..
+Finding unused cells or wires in module \BundleBridgeNexus_6..
+Finding unused cells or wires in module \CSRFile..
+Finding unused cells or wires in module \ClockGroup..
+Finding unused cells or wires in module \ClockGroupAggregator..
+Finding unused cells or wires in module \ClockGroupAggregator_3..
+Finding unused cells or wires in module \ClockGroupAggregator_4..
+Finding unused cells or wires in module \ClockGroupAggregator_5..
+Finding unused cells or wires in module \ClockGroup_3..
+Finding unused cells or wires in module \ClockGroup_4..
+Finding unused cells or wires in module \ClockGroup_5..
+Finding unused cells or wires in module \ClockSinkDomain..
+Finding unused cells or wires in module \CoherenceManagerWrapper..
+Finding unused cells or wires in module \DCache..
+Finding unused cells or wires in module \DCacheDataArray..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_1..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_2..
+Finding unused cells or wires in module \DelayReg..
+Finding unused cells or wires in module \DelayReg_1..
+Finding unused cells or wires in module \DelayReg_2..
+Finding unused cells or wires in module \DelayReg_3..
+Finding unused cells or wires in module \DelayReg_4..
+Finding unused cells or wires in module \DifftestMem2P..
+Finding unused cells or wires in module \ExampleFuzzSystem..
+Finding unused cells or wires in module \FixedClockBroadcast..
+Finding unused cells or wires in module \FixedClockBroadcast_3..
+Finding unused cells or wires in module \FixedClockBroadcast_4..
+Finding unused cells or wires in module \FixedClockBroadcast_5..
+Finding unused cells or wires in module \FixedClockBroadcast_6..
+Finding unused cells or wires in module \FormalTop..
+Finding unused cells or wires in module \Frontend..
+Finding unused cells or wires in module \HellaCacheArbiter..
+Finding unused cells or wires in module \IBuf..
+Finding unused cells or wires in module \ICache..
+Finding unused cells or wires in module \MemRWHelper..
+Finding unused cells or wires in module \MemoryBus..
+Finding unused cells or wires in module \MulDiv..
+Finding unused cells or wires in module \OptimizationBarrier..
+Finding unused cells or wires in module \OptimizationBarrier_1..
+Finding unused cells or wires in module \OptimizationBarrier_10..
+Finding unused cells or wires in module \OptimizationBarrier_11..
+Finding unused cells or wires in module \OptimizationBarrier_12..
+Finding unused cells or wires in module \OptimizationBarrier_13..
+Finding unused cells or wires in module \OptimizationBarrier_2..
+Finding unused cells or wires in module \OptimizationBarrier_3..
+Finding unused cells or wires in module \OptimizationBarrier_8..
+Finding unused cells or wires in module \OptimizationBarrier_9..
+Finding unused cells or wires in module \PTW..
+Finding unused cells or wires in module \PeripheryBus_1..
+Finding unused cells or wires in module \PlusArgTimeout..
+Finding unused cells or wires in module \ProbePicker..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \Queue_1..
+Finding unused cells or wires in module \Queue_10..
+Finding unused cells or wires in module \Queue_11..
+Finding unused cells or wires in module \Queue_12..
+Finding unused cells or wires in module \Queue_13..
+Finding unused cells or wires in module \Queue_14..
+Finding unused cells or wires in module \Queue_15..
+Finding unused cells or wires in module \Queue_16..
+Finding unused cells or wires in module \Queue_17..
+Finding unused cells or wires in module \Queue_18..
+Finding unused cells or wires in module \Queue_19..
+Finding unused cells or wires in module \Queue_2..
+Finding unused cells or wires in module \Queue_20..
+Finding unused cells or wires in module \Queue_21..
+Finding unused cells or wires in module \Queue_22..
+Finding unused cells or wires in module \Queue_23..
+Finding unused cells or wires in module \Queue_24..
+Finding unused cells or wires in module \Queue_25..
+Finding unused cells or wires in module \Queue_26..
+Finding unused cells or wires in module \Queue_27..
+Finding unused cells or wires in module \Queue_28..
+Finding unused cells or wires in module \Queue_29..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \Queue_30..
+Finding unused cells or wires in module \Queue_31..
+Finding unused cells or wires in module \Queue_32..
+Finding unused cells or wires in module \Queue_33..
+Finding unused cells or wires in module \Queue_34..
+Finding unused cells or wires in module \Queue_35..
+Finding unused cells or wires in module \Queue_36..
+Finding unused cells or wires in module \Queue_37..
+Finding unused cells or wires in module \Queue_38..
+Finding unused cells or wires in module \Queue_39..
+Finding unused cells or wires in module \Queue_4..
+Finding unused cells or wires in module \Queue_40..
+Finding unused cells or wires in module \Queue_41..
+Finding unused cells or wires in module \Queue_42..
+Finding unused cells or wires in module \Queue_43..
+Finding unused cells or wires in module \Queue_44..
+Finding unused cells or wires in module \Queue_47..
+Finding unused cells or wires in module \Queue_48..
+Finding unused cells or wires in module \Queue_49..
+Finding unused cells or wires in module \Queue_5..
+Finding unused cells or wires in module \Queue_50..
+Finding unused cells or wires in module \Queue_51..
+Finding unused cells or wires in module \Queue_52..
+Finding unused cells or wires in module \Queue_53..
+Finding unused cells or wires in module \Queue_54..
+Finding unused cells or wires in module \Queue_6..
+Finding unused cells or wires in module \Queue_7..
+Finding unused cells or wires in module \Queue_8..
+Finding unused cells or wires in module \Queue_9..
+Finding unused cells or wires in module \RVCExpander..
+Finding unused cells or wires in module \Repeater..
+Finding unused cells or wires in module \Rocket..
+Finding unused cells or wires in module \RocketTile..
+Finding unused cells or wires in module \ShiftQueue..
+Finding unused cells or wires in module \SimAXIMem..
+Finding unused cells or wires in module \SimTop..
+Finding unused cells or wires in module \SimpleClockGroupSource..
+Finding unused cells or wires in module \SystemBus..
+Finding unused cells or wires in module \TLAtomicAutomata_1..
+Finding unused cells or wires in module \TLB..
+Finding unused cells or wires in module \TLB_1..
+Finding unused cells or wires in module \TLBroadcast..
+Finding unused cells or wires in module \TLBroadcastTracker..
+Finding unused cells or wires in module \TLBroadcastTracker_1..
+Finding unused cells or wires in module \TLBroadcastTracker_2..
+Finding unused cells or wires in module \TLBroadcastTracker_3..
+Finding unused cells or wires in module \TLBuffer_3..
+Finding unused cells or wires in module \TLBuffer_4..
+Finding unused cells or wires in module \TLBuffer_5..
+Finding unused cells or wires in module \TLBuffer_6..
+Finding unused cells or wires in module \TLBuffer_8..
+Finding unused cells or wires in module \TLFIFOFixer..
+Finding unused cells or wires in module \TLFIFOFixer_2..
+Finding unused cells or wires in module \TLFIFOFixer_3..
+Finding unused cells or wires in module \TLFragmenter..
+Finding unused cells or wires in module \TLInterconnectCoupler..
+Finding unused cells or wires in module \TLInterconnectCoupler_2..
+Finding unused cells or wires in module \TLInterconnectCoupler_3..
+Finding unused cells or wires in module \TLInterconnectCoupler_6..
+Finding unused cells or wires in module \TLInterconnectCoupler_7..
+Finding unused cells or wires in module \TLInterconnectCoupler_8..
+Finding unused cells or wires in module \TLJbar..
+Finding unused cells or wires in module \TLROM..
+Finding unused cells or wires in module \TLToAXI4..
+Finding unused cells or wires in module \TLWidthWidget..
+Finding unused cells or wires in module \TLWidthWidget_2..
+Finding unused cells or wires in module \TLWidthWidget_5..
+Finding unused cells or wires in module \TLWidthWidget_6..
+Finding unused cells or wires in module \TLWidthWidget_7..
+Finding unused cells or wires in module \TLWidthWidget_8..
+Finding unused cells or wires in module \TLXbar..
+Finding unused cells or wires in module \TLXbar_4..
+Finding unused cells or wires in module \TLXbar_5..
+Finding unused cells or wires in module \TLXbar_6..
+Finding unused cells or wires in module \TLXbar_7..
+Finding unused cells or wires in module \TLXbar_8..
+Finding unused cells or wires in module \TilePRCIDomain..
+Finding unused cells or wires in module \TileResetDomain..
+Removed 0 unused cells and 8023 unused wires.
+<suppressed ~8023 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader...
+Checking module ALU...
+Checking module AMOALU...
+Checking module AXI4Buffer...
+Checking module AXI4Fragmenter...
+Checking module AXI4IdIndexer...
+Checking module AXI4RAM...
+Checking module AXI4UserYanker...
+Checking module AXI4Xbar...
+Checking module Arbiter...
+Checking module BankBinder...
+Checking module BroadcastFilter...
+Checking module BundleBridgeNexus_15...
+Checking module BundleBridgeNexus_6...
+Checking module CSRFile...
+Checking module ClockGroup...
+Checking module ClockGroupAggregator...
+Checking module ClockGroupAggregator_3...
+Checking module ClockGroupAggregator_4...
+Checking module ClockGroupAggregator_5...
+Checking module ClockGroup_3...
+Checking module ClockGroup_4...
+Checking module ClockGroup_5...
+Checking module ClockSinkDomain...
+Checking module CoherenceManagerWrapper...
+Checking module DCache...
+Warning: Wire DCache.\gbl_clk is used but has no driver.
+Checking module DCacheDataArray...
+Warning: Wire DCacheDataArray.\gbl_clk is used but has no driver.
+Checking module DCacheModuleImpl_Anon_1...
+Checking module DCacheModuleImpl_Anon_2...
+Checking module DelayReg...
+Checking module DelayReg_1...
+Checking module DelayReg_2...
+Checking module DelayReg_3...
+Checking module DelayReg_4...
+Checking module DifftestMem2P...
+Checking module ExampleFuzzSystem...
+Checking module FixedClockBroadcast...
+Checking module FixedClockBroadcast_3...
+Checking module FixedClockBroadcast_4...
+Checking module FixedClockBroadcast_5...
+Checking module FixedClockBroadcast_6...
+Checking module FormalTop...
+Warning: Wire FormalTop.\clock is used but has no driver.
+Checking module Frontend...
+Checking module HellaCacheArbiter...
+Checking module IBuf...
+Checking module ICache...
+Warning: Wire ICache.\gbl_clk is used but has no driver.
+Checking module MemRWHelper...
+Warning: Wire MemRWHelper.\glb_clk is used but has no driver.
+Checking module MemoryBus...
+Checking module MulDiv...
+Checking module OptimizationBarrier...
+Checking module OptimizationBarrier_1...
+Checking module OptimizationBarrier_10...
+Checking module OptimizationBarrier_11...
+Checking module OptimizationBarrier_12...
+Checking module OptimizationBarrier_13...
+Checking module OptimizationBarrier_2...
+Checking module OptimizationBarrier_3...
+Checking module OptimizationBarrier_8...
+Checking module OptimizationBarrier_9...
+Checking module PTW...
+Checking module PeripheryBus_1...
+Checking module PlusArgTimeout...
+Checking module ProbePicker...
+Checking module Queue...
+Warning: Wire Queue.\gbl_clk is used but has no driver.
+Checking module Queue_1...
+Warning: Wire Queue_1.\gbl_clk is used but has no driver.
+Checking module Queue_10...
+Warning: Wire Queue_10.\gbl_clk is used but has no driver.
+Checking module Queue_11...
+Warning: Wire Queue_11.\gbl_clk is used but has no driver.
+Checking module Queue_12...
+Warning: Wire Queue_12.\gbl_clk is used but has no driver.
+Checking module Queue_13...
+Warning: Wire Queue_13.\gbl_clk is used but has no driver.
+Checking module Queue_14...
+Warning: Wire Queue_14.\gbl_clk is used but has no driver.
+Checking module Queue_15...
+Warning: Wire Queue_15.\gbl_clk is used but has no driver.
+Checking module Queue_16...
+Warning: Wire Queue_16.\gbl_clk is used but has no driver.
+Checking module Queue_17...
+Warning: Wire Queue_17.\gbl_clk is used but has no driver.
+Checking module Queue_18...
+Warning: Wire Queue_18.\gbl_clk is used but has no driver.
+Checking module Queue_19...
+Warning: Wire Queue_19.\gbl_clk is used but has no driver.
+Checking module Queue_2...
+Warning: Wire Queue_2.\gbl_clk is used but has no driver.
+Checking module Queue_20...
+Warning: Wire Queue_20.\gbl_clk is used but has no driver.
+Checking module Queue_21...
+Warning: Wire Queue_21.\gbl_clk is used but has no driver.
+Checking module Queue_22...
+Warning: Wire Queue_22.\gbl_clk is used but has no driver.
+Checking module Queue_23...
+Warning: Wire Queue_23.\gbl_clk is used but has no driver.
+Checking module Queue_24...
+Warning: Wire Queue_24.\gbl_clk is used but has no driver.
+Checking module Queue_25...
+Warning: Wire Queue_25.\gbl_clk is used but has no driver.
+Checking module Queue_26...
+Warning: Wire Queue_26.\gbl_clk is used but has no driver.
+Checking module Queue_27...
+Warning: Wire Queue_27.\gbl_clk is used but has no driver.
+Checking module Queue_28...
+Warning: Wire Queue_28.\gbl_clk is used but has no driver.
+Checking module Queue_29...
+Warning: Wire Queue_29.\gbl_clk is used but has no driver.
+Checking module Queue_3...
+Warning: Wire Queue_3.\gbl_clk is used but has no driver.
+Checking module Queue_30...
+Warning: Wire Queue_30.\gbl_clk is used but has no driver.
+Checking module Queue_31...
+Warning: Wire Queue_31.\gbl_clk is used but has no driver.
+Checking module Queue_32...
+Warning: Wire Queue_32.\gbl_clk is used but has no driver.
+Checking module Queue_33...
+Warning: Wire Queue_33.\gbl_clk is used but has no driver.
+Checking module Queue_34...
+Warning: Wire Queue_34.\gbl_clk is used but has no driver.
+Checking module Queue_35...
+Warning: Wire Queue_35.\gbl_clk is used but has no driver.
+Checking module Queue_36...
+Warning: Wire Queue_36.\gbl_clk is used but has no driver.
+Checking module Queue_37...
+Warning: Wire Queue_37.\gbl_clk is used but has no driver.
+Checking module Queue_38...
+Warning: Wire Queue_38.\gbl_clk is used but has no driver.
+Checking module Queue_39...
+Warning: Wire Queue_39.\gbl_clk is used but has no driver.
+Checking module Queue_4...
+Warning: Wire Queue_4.\gbl_clk is used but has no driver.
+Checking module Queue_40...
+Warning: Wire Queue_40.\gbl_clk is used but has no driver.
+Checking module Queue_41...
+Warning: Wire Queue_41.\gbl_clk is used but has no driver.
+Checking module Queue_42...
+Warning: Wire Queue_42.\gbl_clk is used but has no driver.
+Checking module Queue_43...
+Warning: Wire Queue_43.\gbl_clk is used but has no driver.
+Checking module Queue_44...
+Warning: Wire Queue_44.\gbl_clk is used but has no driver.
+Checking module Queue_47...
+Warning: Wire Queue_47.\gbl_clk is used but has no driver.
+Checking module Queue_48...
+Warning: Wire Queue_48.\gbl_clk is used but has no driver.
+Checking module Queue_49...
+Warning: Wire Queue_49.\gbl_clk is used but has no driver.
+Checking module Queue_5...
+Warning: Wire Queue_5.\gbl_clk is used but has no driver.
+Checking module Queue_50...
+Warning: Wire Queue_50.\gbl_clk is used but has no driver.
+Checking module Queue_51...
+Warning: Wire Queue_51.\gbl_clk is used but has no driver.
+Checking module Queue_52...
+Warning: Wire Queue_52.\gbl_clk is used but has no driver.
+Checking module Queue_53...
+Warning: Wire Queue_53.\gbl_clk is used but has no driver.
+Checking module Queue_54...
+Warning: Wire Queue_54.\gbl_clk is used but has no driver.
+Checking module Queue_6...
+Warning: Wire Queue_6.\gbl_clk is used but has no driver.
+Checking module Queue_7...
+Warning: Wire Queue_7.\gbl_clk is used but has no driver.
+Checking module Queue_8...
+Warning: Wire Queue_8.\gbl_clk is used but has no driver.
+Checking module Queue_9...
+Warning: Wire Queue_9.\gbl_clk is used but has no driver.
+Checking module RVCExpander...
+Checking module Repeater...
+Checking module Rocket...
+Checking module RocketTile...
+Checking module ShiftQueue...
+Checking module SimAXIMem...
+Checking module SimTop...
+Checking module SimpleClockGroupSource...
+Checking module SystemBus...
+Checking module TLAtomicAutomata_1...
+Checking module TLB...
+Checking module TLB_1...
+Checking module TLBroadcast...
+Checking module TLBroadcastTracker...
+Checking module TLBroadcastTracker_1...
+Checking module TLBroadcastTracker_2...
+Checking module TLBroadcastTracker_3...
+Checking module TLBuffer_3...
+Checking module TLBuffer_4...
+Checking module TLBuffer_5...
+Checking module TLBuffer_6...
+Checking module TLBuffer_8...
+Checking module TLFIFOFixer...
+Checking module TLFIFOFixer_2...
+Checking module TLFIFOFixer_3...
+Checking module TLFragmenter...
+Checking module TLInterconnectCoupler...
+Checking module TLInterconnectCoupler_2...
+Checking module TLInterconnectCoupler_3...
+Checking module TLInterconnectCoupler_6...
+Checking module TLInterconnectCoupler_7...
+Checking module TLInterconnectCoupler_8...
+Checking module TLJbar...
+Checking module TLROM...
+Checking module TLToAXI4...
+Checking module TLWidthWidget...
+Checking module TLWidthWidget_2...
+Checking module TLWidthWidget_5...
+Checking module TLWidthWidget_6...
+Checking module TLWidthWidget_7...
+Checking module TLWidthWidget_8...
+Checking module TLXbar...
+Checking module TLXbar_4...
+Checking module TLXbar_5...
+Checking module TLXbar_6...
+Checking module TLXbar_7...
+Checking module TLXbar_8...
+Checking module TilePRCIDomain...
+Checking module TileResetDomain...
+Found and reported 58 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader.
+Optimizing module ALU.
+Optimizing module AMOALU.
+Optimizing module AXI4Buffer.
+Optimizing module AXI4Fragmenter.
+<suppressed ~72 debug messages>
+Optimizing module AXI4IdIndexer.
+Optimizing module AXI4RAM.
+<suppressed ~33 debug messages>
+Optimizing module AXI4UserYanker.
+Optimizing module AXI4Xbar.
+Optimizing module Arbiter.
+Optimizing module BankBinder.
+Optimizing module BroadcastFilter.
+Optimizing module BundleBridgeNexus_15.
+Optimizing module BundleBridgeNexus_6.
+Optimizing module CSRFile.
+<suppressed ~159 debug messages>
+Optimizing module ClockGroup.
+Optimizing module ClockGroupAggregator.
+Optimizing module ClockGroupAggregator_3.
+Optimizing module ClockGroupAggregator_4.
+Optimizing module ClockGroupAggregator_5.
+Optimizing module ClockGroup_3.
+Optimizing module ClockGroup_4.
+Optimizing module ClockGroup_5.
+Optimizing module ClockSinkDomain.
+Optimizing module CoherenceManagerWrapper.
+Optimizing module DCache.
+<suppressed ~259 debug messages>
+Optimizing module DCacheDataArray.
+<suppressed ~48 debug messages>
+Optimizing module DCacheModuleImpl_Anon_1.
+Optimizing module DCacheModuleImpl_Anon_2.
+Optimizing module DelayReg.
+<suppressed ~6 debug messages>
+Optimizing module DelayReg_1.
+<suppressed ~36 debug messages>
+Optimizing module DelayReg_2.
+<suppressed ~15 debug messages>
+Optimizing module DelayReg_3.
+<suppressed ~27 debug messages>
+Optimizing module DelayReg_4.
+<suppressed ~12 debug messages>
+Optimizing module DifftestMem2P.
+<suppressed ~4 debug messages>
+Optimizing module ExampleFuzzSystem.
+Optimizing module FixedClockBroadcast.
+Optimizing module FixedClockBroadcast_3.
+Optimizing module FixedClockBroadcast_4.
+Optimizing module FixedClockBroadcast_5.
+Optimizing module FixedClockBroadcast_6.
+Optimizing module FormalTop.
+Optimizing module Frontend.
+<suppressed ~39 debug messages>
+Optimizing module HellaCacheArbiter.
+<suppressed ~6 debug messages>
+Optimizing module IBuf.
+<suppressed ~18 debug messages>
+Optimizing module ICache.
+<suppressed ~52 debug messages>
+Optimizing module MemRWHelper.
+Optimizing module MemoryBus.
+Optimizing module MulDiv.
+<suppressed ~27 debug messages>
+Optimizing module OptimizationBarrier.
+Optimizing module OptimizationBarrier_1.
+Optimizing module OptimizationBarrier_10.
+Optimizing module OptimizationBarrier_11.
+Optimizing module OptimizationBarrier_12.
+Optimizing module OptimizationBarrier_13.
+Optimizing module OptimizationBarrier_2.
+Optimizing module OptimizationBarrier_3.
+Optimizing module OptimizationBarrier_8.
+Optimizing module OptimizationBarrier_9.
+Optimizing module PTW.
+<suppressed ~66 debug messages>
+Optimizing module PeripheryBus_1.
+Optimizing module PlusArgTimeout.
+Optimizing module ProbePicker.
+Optimizing module Queue.
+<suppressed ~17 debug messages>
+Optimizing module Queue_1.
+<suppressed ~25 debug messages>
+Optimizing module Queue_10.
+<suppressed ~5 debug messages>
+Optimizing module Queue_11.
+<suppressed ~5 debug messages>
+Optimizing module Queue_12.
+<suppressed ~5 debug messages>
+Optimizing module Queue_13.
+<suppressed ~5 debug messages>
+Optimizing module Queue_14.
+<suppressed ~5 debug messages>
+Optimizing module Queue_15.
+<suppressed ~5 debug messages>
+Optimizing module Queue_16.
+<suppressed ~5 debug messages>
+Optimizing module Queue_17.
+<suppressed ~5 debug messages>
+Optimizing module Queue_18.
+<suppressed ~5 debug messages>
+Optimizing module Queue_19.
+<suppressed ~5 debug messages>
+Optimizing module Queue_2.
+<suppressed ~5 debug messages>
+Optimizing module Queue_20.
+<suppressed ~5 debug messages>
+Optimizing module Queue_21.
+<suppressed ~5 debug messages>
+Optimizing module Queue_22.
+<suppressed ~5 debug messages>
+Optimizing module Queue_23.
+<suppressed ~5 debug messages>
+Optimizing module Queue_24.
+<suppressed ~5 debug messages>
+Optimizing module Queue_25.
+<suppressed ~5 debug messages>
+Optimizing module Queue_26.
+<suppressed ~5 debug messages>
+Optimizing module Queue_27.
+<suppressed ~5 debug messages>
+Optimizing module Queue_28.
+<suppressed ~5 debug messages>
+Optimizing module Queue_29.
+<suppressed ~5 debug messages>
+Optimizing module Queue_3.
+<suppressed ~5 debug messages>
+Optimizing module Queue_30.
+<suppressed ~5 debug messages>
+Optimizing module Queue_31.
+<suppressed ~5 debug messages>
+Optimizing module Queue_32.
+<suppressed ~5 debug messages>
+Optimizing module Queue_33.
+<suppressed ~5 debug messages>
+Optimizing module Queue_34.
+<suppressed ~6 debug messages>
+Optimizing module Queue_35.
+<suppressed ~11 debug messages>
+Optimizing module Queue_36.
+<suppressed ~13 debug messages>
+Optimizing module Queue_37.
+<suppressed ~13 debug messages>
+Optimizing module Queue_38.
+<suppressed ~13 debug messages>
+Optimizing module Queue_39.
+<suppressed ~13 debug messages>
+Optimizing module Queue_4.
+<suppressed ~5 debug messages>
+Optimizing module Queue_40.
+<suppressed ~23 debug messages>
+Optimizing module Queue_41.
+<suppressed ~25 debug messages>
+Optimizing module Queue_42.
+<suppressed ~17 debug messages>
+Optimizing module Queue_43.
+<suppressed ~21 debug messages>
+Optimizing module Queue_44.
+<suppressed ~11 debug messages>
+Optimizing module Queue_47.
+<suppressed ~15 debug messages>
+Optimizing module Queue_48.
+<suppressed ~13 debug messages>
+Optimizing module Queue_49.
+<suppressed ~15 debug messages>
+Optimizing module Queue_5.
+<suppressed ~5 debug messages>
+Optimizing module Queue_50.
+<suppressed ~15 debug messages>
+Optimizing module Queue_51.
+<suppressed ~19 debug messages>
+Optimizing module Queue_52.
+<suppressed ~8 debug messages>
+Optimizing module Queue_53.
+<suppressed ~8 debug messages>
+Optimizing module Queue_54.
+<suppressed ~6 debug messages>
+Optimizing module Queue_6.
+<suppressed ~5 debug messages>
+Optimizing module Queue_7.
+<suppressed ~5 debug messages>
+Optimizing module Queue_8.
+<suppressed ~5 debug messages>
+Optimizing module Queue_9.
+<suppressed ~5 debug messages>
+Optimizing module RVCExpander.
+Optimizing module Repeater.
+<suppressed ~15 debug messages>
+Optimizing module Rocket.
+<suppressed ~381 debug messages>
+Optimizing module RocketTile.
+Optimizing module ShiftQueue.
+<suppressed ~90 debug messages>
+Optimizing module SimAXIMem.
+Optimizing module SimTop.
+<suppressed ~3 debug messages>
+Optimizing module SimpleClockGroupSource.
+Optimizing module SystemBus.
+Optimizing module TLAtomicAutomata_1.
+Optimizing module TLB.
+<suppressed ~63 debug messages>
+Optimizing module TLB_1.
+<suppressed ~63 debug messages>
+Optimizing module TLBroadcast.
+<suppressed ~45 debug messages>
+Optimizing module TLBroadcastTracker.
+<suppressed ~24 debug messages>
+Optimizing module TLBroadcastTracker_1.
+<suppressed ~24 debug messages>
+Optimizing module TLBroadcastTracker_2.
+<suppressed ~24 debug messages>
+Optimizing module TLBroadcastTracker_3.
+<suppressed ~24 debug messages>
+Optimizing module TLBuffer_3.
+Optimizing module TLBuffer_4.
+Optimizing module TLBuffer_5.
+Optimizing module TLBuffer_6.
+Optimizing module TLBuffer_8.
+Optimizing module TLFIFOFixer.
+Optimizing module TLFIFOFixer_2.
+Optimizing module TLFIFOFixer_3.
+Optimizing module TLFragmenter.
+<suppressed ~15 debug messages>
+Optimizing module TLInterconnectCoupler.
+Optimizing module TLInterconnectCoupler_2.
+Optimizing module TLInterconnectCoupler_3.
+Optimizing module TLInterconnectCoupler_6.
+Optimizing module TLInterconnectCoupler_7.
+Optimizing module TLInterconnectCoupler_8.
+Optimizing module TLJbar.
+Optimizing module TLROM.
+Optimizing module TLToAXI4.
+<suppressed ~66 debug messages>
+Optimizing module TLWidthWidget.
+Optimizing module TLWidthWidget_2.
+Optimizing module TLWidthWidget_5.
+Optimizing module TLWidthWidget_6.
+Optimizing module TLWidthWidget_7.
+Optimizing module TLWidthWidget_8.
+Optimizing module TLXbar.
+<suppressed ~12 debug messages>
+Optimizing module TLXbar_4.
+Optimizing module TLXbar_5.
+Optimizing module TLXbar_6.
+Optimizing module TLXbar_7.
+Optimizing module TLXbar_8.
+<suppressed ~12 debug messages>
+Optimizing module TilePRCIDomain.
+Optimizing module TileResetDomain.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader'.
+Finding identical cells in module `\ALU'.
+Finding identical cells in module `\AMOALU'.
+Finding identical cells in module `\AXI4Buffer'.
+Finding identical cells in module `\AXI4Fragmenter'.
+Finding identical cells in module `\AXI4IdIndexer'.
+Finding identical cells in module `\AXI4RAM'.
+Finding identical cells in module `\AXI4UserYanker'.
+Finding identical cells in module `\AXI4Xbar'.
+Finding identical cells in module `\Arbiter'.
+Finding identical cells in module `\BankBinder'.
+Finding identical cells in module `\BroadcastFilter'.
+Finding identical cells in module `\BundleBridgeNexus_15'.
+Finding identical cells in module `\BundleBridgeNexus_6'.
+Finding identical cells in module `\CSRFile'.
+Finding identical cells in module `\ClockGroup'.
+Finding identical cells in module `\ClockGroupAggregator'.
+Finding identical cells in module `\ClockGroupAggregator_3'.
+Finding identical cells in module `\ClockGroupAggregator_4'.
+Finding identical cells in module `\ClockGroupAggregator_5'.
+Finding identical cells in module `\ClockGroup_3'.
+Finding identical cells in module `\ClockGroup_4'.
+Finding identical cells in module `\ClockGroup_5'.
+Finding identical cells in module `\ClockSinkDomain'.
+Finding identical cells in module `\CoherenceManagerWrapper'.
+Finding identical cells in module `\DCache'.
+Finding identical cells in module `\DCacheDataArray'.
+Finding identical cells in module `\DCacheModuleImpl_Anon_1'.
+Finding identical cells in module `\DCacheModuleImpl_Anon_2'.
+Finding identical cells in module `\DelayReg'.
+Finding identical cells in module `\DelayReg_1'.
+Finding identical cells in module `\DelayReg_2'.
+Finding identical cells in module `\DelayReg_3'.
+Finding identical cells in module `\DelayReg_4'.
+Finding identical cells in module `\DifftestMem2P'.
+Finding identical cells in module `\ExampleFuzzSystem'.
+Finding identical cells in module `\FixedClockBroadcast'.
+Finding identical cells in module `\FixedClockBroadcast_3'.
+Finding identical cells in module `\FixedClockBroadcast_4'.
+Finding identical cells in module `\FixedClockBroadcast_5'.
+Finding identical cells in module `\FixedClockBroadcast_6'.
+Finding identical cells in module `\FormalTop'.
+Finding identical cells in module `\Frontend'.
+Finding identical cells in module `\HellaCacheArbiter'.
+Finding identical cells in module `\IBuf'.
+Finding identical cells in module `\ICache'.
+Finding identical cells in module `\MemRWHelper'.
+Finding identical cells in module `\MemoryBus'.
+Finding identical cells in module `\MulDiv'.
+Finding identical cells in module `\OptimizationBarrier'.
+Finding identical cells in module `\OptimizationBarrier_1'.
+Finding identical cells in module `\OptimizationBarrier_10'.
+Finding identical cells in module `\OptimizationBarrier_11'.
+Finding identical cells in module `\OptimizationBarrier_12'.
+Finding identical cells in module `\OptimizationBarrier_13'.
+Finding identical cells in module `\OptimizationBarrier_2'.
+Finding identical cells in module `\OptimizationBarrier_3'.
+Finding identical cells in module `\OptimizationBarrier_8'.
+Finding identical cells in module `\OptimizationBarrier_9'.
+Finding identical cells in module `\PTW'.
+Finding identical cells in module `\PeripheryBus_1'.
+Finding identical cells in module `\PlusArgTimeout'.
+Finding identical cells in module `\ProbePicker'.
+Finding identical cells in module `\Queue'.
+Finding identical cells in module `\Queue_1'.
+Finding identical cells in module `\Queue_10'.
+Finding identical cells in module `\Queue_11'.
+Finding identical cells in module `\Queue_12'.
+Finding identical cells in module `\Queue_13'.
+Finding identical cells in module `\Queue_14'.
+Finding identical cells in module `\Queue_15'.
+Finding identical cells in module `\Queue_16'.
+Finding identical cells in module `\Queue_17'.
+Finding identical cells in module `\Queue_18'.
+Finding identical cells in module `\Queue_19'.
+Finding identical cells in module `\Queue_2'.
+Finding identical cells in module `\Queue_20'.
+Finding identical cells in module `\Queue_21'.
+Finding identical cells in module `\Queue_22'.
+Finding identical cells in module `\Queue_23'.
+Finding identical cells in module `\Queue_24'.
+Finding identical cells in module `\Queue_25'.
+Finding identical cells in module `\Queue_26'.
+Finding identical cells in module `\Queue_27'.
+Finding identical cells in module `\Queue_28'.
+Finding identical cells in module `\Queue_29'.
+Finding identical cells in module `\Queue_3'.
+Finding identical cells in module `\Queue_30'.
+Finding identical cells in module `\Queue_31'.
+Finding identical cells in module `\Queue_32'.
+Finding identical cells in module `\Queue_33'.
+Finding identical cells in module `\Queue_34'.
+Finding identical cells in module `\Queue_35'.
+Finding identical cells in module `\Queue_36'.
+Finding identical cells in module `\Queue_37'.
+Finding identical cells in module `\Queue_38'.
+Finding identical cells in module `\Queue_39'.
+Finding identical cells in module `\Queue_4'.
+Finding identical cells in module `\Queue_40'.
+Finding identical cells in module `\Queue_41'.
+Finding identical cells in module `\Queue_42'.
+Finding identical cells in module `\Queue_43'.
+Finding identical cells in module `\Queue_44'.
+Finding identical cells in module `\Queue_47'.
+Finding identical cells in module `\Queue_48'.
+Finding identical cells in module `\Queue_49'.
+Finding identical cells in module `\Queue_5'.
+Finding identical cells in module `\Queue_50'.
+Finding identical cells in module `\Queue_51'.
+Finding identical cells in module `\Queue_52'.
+Finding identical cells in module `\Queue_53'.
+Finding identical cells in module `\Queue_54'.
+Finding identical cells in module `\Queue_6'.
+Finding identical cells in module `\Queue_7'.
+Finding identical cells in module `\Queue_8'.
+Finding identical cells in module `\Queue_9'.
+Finding identical cells in module `\RVCExpander'.
+Finding identical cells in module `\Repeater'.
+Finding identical cells in module `\Rocket'.
+Finding identical cells in module `\RocketTile'.
+Finding identical cells in module `\ShiftQueue'.
+Finding identical cells in module `\SimAXIMem'.
+Finding identical cells in module `\SimTop'.
+Finding identical cells in module `\SimpleClockGroupSource'.
+Finding identical cells in module `\SystemBus'.
+Finding identical cells in module `\TLAtomicAutomata_1'.
+Finding identical cells in module `\TLB'.
+Finding identical cells in module `\TLB_1'.
+Finding identical cells in module `\TLBroadcast'.
+Finding identical cells in module `\TLBroadcastTracker'.
+Finding identical cells in module `\TLBroadcastTracker_1'.
+Finding identical cells in module `\TLBroadcastTracker_2'.
+Finding identical cells in module `\TLBroadcastTracker_3'.
+Finding identical cells in module `\TLBuffer_3'.
+Finding identical cells in module `\TLBuffer_4'.
+Finding identical cells in module `\TLBuffer_5'.
+Finding identical cells in module `\TLBuffer_6'.
+Finding identical cells in module `\TLBuffer_8'.
+Finding identical cells in module `\TLFIFOFixer'.
+Finding identical cells in module `\TLFIFOFixer_2'.
+Finding identical cells in module `\TLFIFOFixer_3'.
+Finding identical cells in module `\TLFragmenter'.
+Finding identical cells in module `\TLInterconnectCoupler'.
+Finding identical cells in module `\TLInterconnectCoupler_2'.
+Finding identical cells in module `\TLInterconnectCoupler_3'.
+Finding identical cells in module `\TLInterconnectCoupler_6'.
+Finding identical cells in module `\TLInterconnectCoupler_7'.
+Finding identical cells in module `\TLInterconnectCoupler_8'.
+Finding identical cells in module `\TLJbar'.
+Finding identical cells in module `\TLROM'.
+Finding identical cells in module `\TLToAXI4'.
+Finding identical cells in module `\TLWidthWidget'.
+Finding identical cells in module `\TLWidthWidget_2'.
+Finding identical cells in module `\TLWidthWidget_5'.
+Finding identical cells in module `\TLWidthWidget_6'.
+Finding identical cells in module `\TLWidthWidget_7'.
+Finding identical cells in module `\TLWidthWidget_8'.
+Finding identical cells in module `\TLXbar'.
+Finding identical cells in module `\TLXbar_4'.
+Finding identical cells in module `\TLXbar_5'.
+Finding identical cells in module `\TLXbar_6'.
+Finding identical cells in module `\TLXbar_7'.
+Finding identical cells in module `\TLXbar_8'.
+Finding identical cells in module `\TilePRCIDomain'.
+Finding identical cells in module `\TileResetDomain'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader..
+Finding unused cells or wires in module \ALU..
+Finding unused cells or wires in module \AMOALU..
+Finding unused cells or wires in module \AXI4Buffer..
+Finding unused cells or wires in module \AXI4Fragmenter..
+Finding unused cells or wires in module \AXI4IdIndexer..
+Finding unused cells or wires in module \AXI4RAM..
+Finding unused cells or wires in module \AXI4UserYanker..
+Finding unused cells or wires in module \AXI4Xbar..
+Finding unused cells or wires in module \Arbiter..
+Finding unused cells or wires in module \BankBinder..
+Finding unused cells or wires in module \BroadcastFilter..
+Finding unused cells or wires in module \BundleBridgeNexus_15..
+Finding unused cells or wires in module \BundleBridgeNexus_6..
+Finding unused cells or wires in module \CSRFile..
+Finding unused cells or wires in module \ClockGroup..
+Finding unused cells or wires in module \ClockGroupAggregator..
+Finding unused cells or wires in module \ClockGroupAggregator_3..
+Finding unused cells or wires in module \ClockGroupAggregator_4..
+Finding unused cells or wires in module \ClockGroupAggregator_5..
+Finding unused cells or wires in module \ClockGroup_3..
+Finding unused cells or wires in module \ClockGroup_4..
+Finding unused cells or wires in module \ClockGroup_5..
+Finding unused cells or wires in module \ClockSinkDomain..
+Finding unused cells or wires in module \CoherenceManagerWrapper..
+Finding unused cells or wires in module \DCache..
+Finding unused cells or wires in module \DCacheDataArray..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_1..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_2..
+Finding unused cells or wires in module \DelayReg..
+Finding unused cells or wires in module \DelayReg_1..
+Finding unused cells or wires in module \DelayReg_2..
+Finding unused cells or wires in module \DelayReg_3..
+Finding unused cells or wires in module \DelayReg_4..
+Finding unused cells or wires in module \DifftestMem2P..
+Finding unused cells or wires in module \ExampleFuzzSystem..
+Finding unused cells or wires in module \FixedClockBroadcast..
+Finding unused cells or wires in module \FixedClockBroadcast_3..
+Finding unused cells or wires in module \FixedClockBroadcast_4..
+Finding unused cells or wires in module \FixedClockBroadcast_5..
+Finding unused cells or wires in module \FixedClockBroadcast_6..
+Finding unused cells or wires in module \FormalTop..
+Finding unused cells or wires in module \Frontend..
+Finding unused cells or wires in module \HellaCacheArbiter..
+Finding unused cells or wires in module \IBuf..
+Finding unused cells or wires in module \ICache..
+Finding unused cells or wires in module \MemRWHelper..
+Finding unused cells or wires in module \MemoryBus..
+Finding unused cells or wires in module \MulDiv..
+Finding unused cells or wires in module \OptimizationBarrier..
+Finding unused cells or wires in module \OptimizationBarrier_1..
+Finding unused cells or wires in module \OptimizationBarrier_10..
+Finding unused cells or wires in module \OptimizationBarrier_11..
+Finding unused cells or wires in module \OptimizationBarrier_12..
+Finding unused cells or wires in module \OptimizationBarrier_13..
+Finding unused cells or wires in module \OptimizationBarrier_2..
+Finding unused cells or wires in module \OptimizationBarrier_3..
+Finding unused cells or wires in module \OptimizationBarrier_8..
+Finding unused cells or wires in module \OptimizationBarrier_9..
+Finding unused cells or wires in module \PTW..
+Finding unused cells or wires in module \PeripheryBus_1..
+Finding unused cells or wires in module \PlusArgTimeout..
+Finding unused cells or wires in module \ProbePicker..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \Queue_1..
+Finding unused cells or wires in module \Queue_10..
+Finding unused cells or wires in module \Queue_11..
+Finding unused cells or wires in module \Queue_12..
+Finding unused cells or wires in module \Queue_13..
+Finding unused cells or wires in module \Queue_14..
+Finding unused cells or wires in module \Queue_15..
+Finding unused cells or wires in module \Queue_16..
+Finding unused cells or wires in module \Queue_17..
+Finding unused cells or wires in module \Queue_18..
+Finding unused cells or wires in module \Queue_19..
+Finding unused cells or wires in module \Queue_2..
+Finding unused cells or wires in module \Queue_20..
+Finding unused cells or wires in module \Queue_21..
+Finding unused cells or wires in module \Queue_22..
+Finding unused cells or wires in module \Queue_23..
+Finding unused cells or wires in module \Queue_24..
+Finding unused cells or wires in module \Queue_25..
+Finding unused cells or wires in module \Queue_26..
+Finding unused cells or wires in module \Queue_27..
+Finding unused cells or wires in module \Queue_28..
+Finding unused cells or wires in module \Queue_29..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \Queue_30..
+Finding unused cells or wires in module \Queue_31..
+Finding unused cells or wires in module \Queue_32..
+Finding unused cells or wires in module \Queue_33..
+Finding unused cells or wires in module \Queue_34..
+Finding unused cells or wires in module \Queue_35..
+Finding unused cells or wires in module \Queue_36..
+Finding unused cells or wires in module \Queue_37..
+Finding unused cells or wires in module \Queue_38..
+Finding unused cells or wires in module \Queue_39..
+Finding unused cells or wires in module \Queue_4..
+Finding unused cells or wires in module \Queue_40..
+Finding unused cells or wires in module \Queue_41..
+Finding unused cells or wires in module \Queue_42..
+Finding unused cells or wires in module \Queue_43..
+Finding unused cells or wires in module \Queue_44..
+Finding unused cells or wires in module \Queue_47..
+Finding unused cells or wires in module \Queue_48..
+Finding unused cells or wires in module \Queue_49..
+Finding unused cells or wires in module \Queue_5..
+Finding unused cells or wires in module \Queue_50..
+Finding unused cells or wires in module \Queue_51..
+Finding unused cells or wires in module \Queue_52..
+Finding unused cells or wires in module \Queue_53..
+Finding unused cells or wires in module \Queue_54..
+Finding unused cells or wires in module \Queue_6..
+Finding unused cells or wires in module \Queue_7..
+Finding unused cells or wires in module \Queue_8..
+Finding unused cells or wires in module \Queue_9..
+Finding unused cells or wires in module \RVCExpander..
+Finding unused cells or wires in module \Repeater..
+Finding unused cells or wires in module \Rocket..
+Finding unused cells or wires in module \RocketTile..
+Finding unused cells or wires in module \ShiftQueue..
+Finding unused cells or wires in module \SimAXIMem..
+Finding unused cells or wires in module \SimTop..
+Finding unused cells or wires in module \SimpleClockGroupSource..
+Finding unused cells or wires in module \SystemBus..
+Finding unused cells or wires in module \TLAtomicAutomata_1..
+Finding unused cells or wires in module \TLB..
+Finding unused cells or wires in module \TLB_1..
+Finding unused cells or wires in module \TLBroadcast..
+Finding unused cells or wires in module \TLBroadcastTracker..
+Finding unused cells or wires in module \TLBroadcastTracker_1..
+Finding unused cells or wires in module \TLBroadcastTracker_2..
+Finding unused cells or wires in module \TLBroadcastTracker_3..
+Finding unused cells or wires in module \TLBuffer_3..
+Finding unused cells or wires in module \TLBuffer_4..
+Finding unused cells or wires in module \TLBuffer_5..
+Finding unused cells or wires in module \TLBuffer_6..
+Finding unused cells or wires in module \TLBuffer_8..
+Finding unused cells or wires in module \TLFIFOFixer..
+Finding unused cells or wires in module \TLFIFOFixer_2..
+Finding unused cells or wires in module \TLFIFOFixer_3..
+Finding unused cells or wires in module \TLFragmenter..
+Finding unused cells or wires in module \TLInterconnectCoupler..
+Finding unused cells or wires in module \TLInterconnectCoupler_2..
+Finding unused cells or wires in module \TLInterconnectCoupler_3..
+Finding unused cells or wires in module \TLInterconnectCoupler_6..
+Finding unused cells or wires in module \TLInterconnectCoupler_7..
+Finding unused cells or wires in module \TLInterconnectCoupler_8..
+Finding unused cells or wires in module \TLJbar..
+Finding unused cells or wires in module \TLROM..
+Finding unused cells or wires in module \TLToAXI4..
+Finding unused cells or wires in module \TLWidthWidget..
+Finding unused cells or wires in module \TLWidthWidget_2..
+Finding unused cells or wires in module \TLWidthWidget_5..
+Finding unused cells or wires in module \TLWidthWidget_6..
+Finding unused cells or wires in module \TLWidthWidget_7..
+Finding unused cells or wires in module \TLWidthWidget_8..
+Finding unused cells or wires in module \TLXbar..
+Finding unused cells or wires in module \TLXbar_4..
+Finding unused cells or wires in module \TLXbar_5..
+Finding unused cells or wires in module \TLXbar_6..
+Finding unused cells or wires in module \TLXbar_7..
+Finding unused cells or wires in module \TLXbar_8..
+Finding unused cells or wires in module \TilePRCIDomain..
+Finding unused cells or wires in module \TileResetDomain..
+Removed 591 unused cells and 2880 unused wires.
+<suppressed ~679 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader..
+Finding unused cells or wires in module \ALU..
+Finding unused cells or wires in module \AMOALU..
+Finding unused cells or wires in module \AXI4Buffer..
+Finding unused cells or wires in module \AXI4Fragmenter..
+Finding unused cells or wires in module \AXI4IdIndexer..
+Finding unused cells or wires in module \AXI4RAM..
+Finding unused cells or wires in module \AXI4UserYanker..
+Finding unused cells or wires in module \AXI4Xbar..
+Finding unused cells or wires in module \Arbiter..
+Finding unused cells or wires in module \BankBinder..
+Finding unused cells or wires in module \BroadcastFilter..
+Finding unused cells or wires in module \BundleBridgeNexus_15..
+Finding unused cells or wires in module \BundleBridgeNexus_6..
+Finding unused cells or wires in module \CSRFile..
+Finding unused cells or wires in module \ClockGroup..
+Finding unused cells or wires in module \ClockGroupAggregator..
+Finding unused cells or wires in module \ClockGroupAggregator_3..
+Finding unused cells or wires in module \ClockGroupAggregator_4..
+Finding unused cells or wires in module \ClockGroupAggregator_5..
+Finding unused cells or wires in module \ClockGroup_3..
+Finding unused cells or wires in module \ClockGroup_4..
+Finding unused cells or wires in module \ClockGroup_5..
+Finding unused cells or wires in module \ClockSinkDomain..
+Finding unused cells or wires in module \CoherenceManagerWrapper..
+Finding unused cells or wires in module \DCache..
+Finding unused cells or wires in module \DCacheDataArray..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_1..
+Finding unused cells or wires in module \DCacheModuleImpl_Anon_2..
+Finding unused cells or wires in module \DelayReg..
+Finding unused cells or wires in module \DelayReg_1..
+Finding unused cells or wires in module \DelayReg_2..
+Finding unused cells or wires in module \DelayReg_3..
+Finding unused cells or wires in module \DelayReg_4..
+Finding unused cells or wires in module \DifftestMem2P..
+Finding unused cells or wires in module \ExampleFuzzSystem..
+Finding unused cells or wires in module \FixedClockBroadcast..
+Finding unused cells or wires in module \FixedClockBroadcast_3..
+Finding unused cells or wires in module \FixedClockBroadcast_4..
+Finding unused cells or wires in module \FixedClockBroadcast_5..
+Finding unused cells or wires in module \FixedClockBroadcast_6..
+Finding unused cells or wires in module \FormalTop..
+Finding unused cells or wires in module \Frontend..
+Finding unused cells or wires in module \HellaCacheArbiter..
+Finding unused cells or wires in module \IBuf..
+Finding unused cells or wires in module \ICache..
+Finding unused cells or wires in module \MemRWHelper..
+Finding unused cells or wires in module \MemoryBus..
+Finding unused cells or wires in module \MulDiv..
+Finding unused cells or wires in module \OptimizationBarrier..
+Finding unused cells or wires in module \OptimizationBarrier_1..
+Finding unused cells or wires in module \OptimizationBarrier_10..
+Finding unused cells or wires in module \OptimizationBarrier_11..
+Finding unused cells or wires in module \OptimizationBarrier_12..
+Finding unused cells or wires in module \OptimizationBarrier_13..
+Finding unused cells or wires in module \OptimizationBarrier_2..
+Finding unused cells or wires in module \OptimizationBarrier_3..
+Finding unused cells or wires in module \OptimizationBarrier_8..
+Finding unused cells or wires in module \OptimizationBarrier_9..
+Finding unused cells or wires in module \PTW..
+Finding unused cells or wires in module \PeripheryBus_1..
+Finding unused cells or wires in module \PlusArgTimeout..
+Finding unused cells or wires in module \ProbePicker..
+Finding unused cells or wires in module \Queue..
+Finding unused cells or wires in module \Queue_1..
+Finding unused cells or wires in module \Queue_10..
+Finding unused cells or wires in module \Queue_11..
+Finding unused cells or wires in module \Queue_12..
+Finding unused cells or wires in module \Queue_13..
+Finding unused cells or wires in module \Queue_14..
+Finding unused cells or wires in module \Queue_15..
+Finding unused cells or wires in module \Queue_16..
+Finding unused cells or wires in module \Queue_17..
+Finding unused cells or wires in module \Queue_18..
+Finding unused cells or wires in module \Queue_19..
+Finding unused cells or wires in module \Queue_2..
+Finding unused cells or wires in module \Queue_20..
+Finding unused cells or wires in module \Queue_21..
+Finding unused cells or wires in module \Queue_22..
+Finding unused cells or wires in module \Queue_23..
+Finding unused cells or wires in module \Queue_24..
+Finding unused cells or wires in module \Queue_25..
+Finding unused cells or wires in module \Queue_26..
+Finding unused cells or wires in module \Queue_27..
+Finding unused cells or wires in module \Queue_28..
+Finding unused cells or wires in module \Queue_29..
+Finding unused cells or wires in module \Queue_3..
+Finding unused cells or wires in module \Queue_30..
+Finding unused cells or wires in module \Queue_31..
+Finding unused cells or wires in module \Queue_32..
+Finding unused cells or wires in module \Queue_33..
+Finding unused cells or wires in module \Queue_34..
+Finding unused cells or wires in module \Queue_35..
+Finding unused cells or wires in module \Queue_36..
+Finding unused cells or wires in module \Queue_37..
+Finding unused cells or wires in module \Queue_38..
+Finding unused cells or wires in module \Queue_39..
+Finding unused cells or wires in module \Queue_4..
+Finding unused cells or wires in module \Queue_40..
+Finding unused cells or wires in module \Queue_41..
+Finding unused cells or wires in module \Queue_42..
+Finding unused cells or wires in module \Queue_43..
+Finding unused cells or wires in module \Queue_44..
+Finding unused cells or wires in module \Queue_47..
+Finding unused cells or wires in module \Queue_48..
+Finding unused cells or wires in module \Queue_49..
+Finding unused cells or wires in module \Queue_5..
+Finding unused cells or wires in module \Queue_50..
+Finding unused cells or wires in module \Queue_51..
+Finding unused cells or wires in module \Queue_52..
+Finding unused cells or wires in module \Queue_53..
+Finding unused cells or wires in module \Queue_54..
+Finding unused cells or wires in module \Queue_6..
+Finding unused cells or wires in module \Queue_7..
+Finding unused cells or wires in module \Queue_8..
+Finding unused cells or wires in module \Queue_9..
+Finding unused cells or wires in module \RVCExpander..
+Finding unused cells or wires in module \Repeater..
+Finding unused cells or wires in module \Rocket..
+Finding unused cells or wires in module \RocketTile..
+Finding unused cells or wires in module \ShiftQueue..
+Finding unused cells or wires in module \SimAXIMem..
+Finding unused cells or wires in module \SimTop..
+Finding unused cells or wires in module \SimpleClockGroupSource..
+Finding unused cells or wires in module \SystemBus..
+Finding unused cells or wires in module \TLAtomicAutomata_1..
+Finding unused cells or wires in module \TLB..
+Finding unused cells or wires in module \TLB_1..
+Finding unused cells or wires in module \TLBroadcast..
+Finding unused cells or wires in module \TLBroadcastTracker..
+Finding unused cells or wires in module \TLBroadcastTracker_1..
+Finding unused cells or wires in module \TLBroadcastTracker_2..
+Finding unused cells or wires in module \TLBroadcastTracker_3..
+Finding unused cells or wires in module \TLBuffer_3..
+Finding unused cells or wires in module \TLBuffer_4..
+Finding unused cells or wires in module \TLBuffer_5..
+Finding unused cells or wires in module \TLBuffer_6..
+Finding unused cells or wires in module \TLBuffer_8..
+Finding unused cells or wires in module \TLFIFOFixer..
+Finding unused cells or wires in module \TLFIFOFixer_2..
+Finding unused cells or wires in module \TLFIFOFixer_3..
+Finding unused cells or wires in module \TLFragmenter..
+Finding unused cells or wires in module \TLInterconnectCoupler..
+Finding unused cells or wires in module \TLInterconnectCoupler_2..
+Finding unused cells or wires in module \TLInterconnectCoupler_3..
+Finding unused cells or wires in module \TLInterconnectCoupler_6..
+Finding unused cells or wires in module \TLInterconnectCoupler_7..
+Finding unused cells or wires in module \TLInterconnectCoupler_8..
+Finding unused cells or wires in module \TLJbar..
+Finding unused cells or wires in module \TLROM..
+Finding unused cells or wires in module \TLToAXI4..
+Finding unused cells or wires in module \TLWidthWidget..
+Finding unused cells or wires in module \TLWidthWidget_2..
+Finding unused cells or wires in module \TLWidthWidget_5..
+Finding unused cells or wires in module \TLWidthWidget_6..
+Finding unused cells or wires in module \TLWidthWidget_7..
+Finding unused cells or wires in module \TLWidthWidget_8..
+Finding unused cells or wires in module \TLXbar..
+Finding unused cells or wires in module \TLXbar_4..
+Finding unused cells or wires in module \TLXbar_5..
+Finding unused cells or wires in module \TLXbar_6..
+Finding unused cells or wires in module \TLXbar_7..
+Finding unused cells or wires in module \TLXbar_8..
+Finding unused cells or wires in module \TilePRCIDomain..
+Finding unused cells or wires in module \TileResetDomain..
+Removed 0 unused cells and 198 unused wires.
+<suppressed ~58 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+Warnings: 58 unique messages, 58 total
+End of script. Logfile hash: b091a5ae41, CPU: user 3.55s system 0.04s, MEM: 94.68 MB peak
+Yosys 0.51+41 (git sha1 0c689091e, clang++ 18.1.8 -fPIC -O3)
+Time spent: 38% 4x opt_clean (1 sec), 12% 1x opt_dff (0 sec), ...

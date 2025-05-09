@@ -4,7 +4,7 @@ depth 50
 timeout 5400
 
 [engines]
-aiger aigbmc
+aiger modelchecker
 
 [script]
 read -formal define.sv

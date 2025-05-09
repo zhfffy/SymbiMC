@@ -1,0 +1,4135 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.51+41 (git sha1 0c689091e, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `FormalTop'. Setting top module to FormalTop.
+
+2.1. Analyzing design hierarchy..
+Top module:  \FormalTop
+Used module:     \SimTop
+Used module:         \SimAXIMem
+Used module:             \AXI4RAM
+Used module:                 \DifftestMem2P
+Used module:                     \MemRWHelper
+Used module:             \AXI4Xbar
+Used module:             \AXI4Fragmenter
+Used module:                 \Queue_54
+Used module:                 \Queue_53
+Used module:                 \Queue_52
+Used module:             \AXI4Buffer
+Used module:                 \Queue_48
+Used module:                 \Queue_47
+Used module:                 \Queue_50
+Used module:                 \Queue_51
+Used module:                 \Queue_49
+Used module:         \ExampleFuzzSystem
+Used module:             \TilePRCIDomain
+Used module:                 \TileResetDomain
+Used module:                     \RocketTile
+Used module:                         \TLWidthWidget_8
+Used module:                         \TLWidthWidget_7
+Used module:                         \TLXbar_8
+Used module:                         \PTW
+Used module:                             \OptimizationBarrier_12
+Used module:                             \OptimizationBarrier_13
+Used module:                             \Arbiter
+Used module:                         \Frontend
+Used module:                             \TLB_1
+Used module:                                 \OptimizationBarrier_8
+Used module:                                 \OptimizationBarrier_11
+Used module:                                 \OptimizationBarrier_10
+Used module:                                 \OptimizationBarrier_9
+Used module:                             \ICache
+Used module:                             \ShiftQueue
+Used module:                         \HellaCacheArbiter
+Used module:                         \DCache
+Used module:                             \TLB
+Used module:                                 \OptimizationBarrier
+Used module:                                 \OptimizationBarrier_3
+Used module:                                 \OptimizationBarrier_2
+Used module:                                 \OptimizationBarrier_1
+Used module:                             \DCacheModuleImpl_Anon_1
+Used module:                             \DelayReg_1
+Used module:                             \DelayReg
+Used module:                             \DCacheModuleImpl_Anon_2
+Used module:                             \DCacheDataArray
+Used module:                             \AMOALU
+Used module:                         \Rocket
+Used module:                             \IBuf
+Used module:                                 \RVCExpander
+Used module:                             \MulDiv
+Used module:                             \DelayReg_4
+Used module:                             \DelayReg_3
+Used module:                             \CSRFile
+Used module:                                 \DelayReg_2
+Used module:                             \ALU
+Used module:                             \PlusArgTimeout
+Used module:                         \TLBuffer_6
+Used module:                         \BundleBridgeNexus_6
+Used module:                 \FixedClockBroadcast_6
+Used module:                 \TLBuffer_8
+Used module:                     \Queue_44
+Used module:                     \Queue_43
+Used module:                     \Queue_40
+Used module:                     \Queue_41
+Used module:                     \Queue_42
+Used module:             \BundleBridgeNexus_15
+Used module:             \SystemBus
+Used module:                 \TLXbar
+Used module:                 \ClockGroupAggregator
+Used module:                 \TLFIFOFixer
+Used module:                 \FixedClockBroadcast
+Used module:                 \TLInterconnectCoupler_2
+Used module:                     \TLWidthWidget_2
+Used module:                 \TLInterconnectCoupler
+Used module:                     \TLWidthWidget
+Used module:                 \TLInterconnectCoupler_3
+Used module:                 \ClockGroup
+Used module:             \MemoryBus
+Used module:                 \TLXbar_7
+Used module:                 \TLXbar_6
+Used module:                 \ClockGroupAggregator_4
+Used module:                 \ProbePicker
+Used module:                 \TLFIFOFixer_3
+Used module:                 \FixedClockBroadcast_4
+Used module:                 \TLInterconnectCoupler_7
+Used module:                     \TLWidthWidget_5
+Used module:                     \TLToAXI4
+Used module:                         \Queue_35
+Used module:                         \Queue_34
+Used module:                     \AXI4UserYanker
+Used module:                         \Queue_11
+Used module:                         \Queue_10
+Used module:                         \Queue_9
+Used module:                         \Queue_8
+Used module:                         \Queue_7
+Used module:                         \Queue_6
+Used module:                         \Queue_33
+Used module:                         \Queue_32
+Used module:                         \Queue_5
+Used module:                         \Queue_31
+Used module:                         \Queue_30
+Used module:                         \Queue_29
+Used module:                         \Queue_28
+Used module:                         \Queue_27
+Used module:                         \Queue_26
+Used module:                         \Queue_25
+Used module:                         \Queue_24
+Used module:                         \Queue_23
+Used module:                         \Queue_22
+Used module:                         \Queue_4
+Used module:                         \Queue_21
+Used module:                         \Queue_20
+Used module:                         \Queue_19
+Used module:                         \Queue_18
+Used module:                         \Queue_17
+Used module:                         \Queue_16
+Used module:                         \Queue_15
+Used module:                         \Queue_14
+Used module:                         \Queue_13
+Used module:                         \Queue_12
+Used module:                         \Queue_3
+Used module:                         \Queue_2
+Used module:                     \AXI4IdIndexer
+Used module:                 \ClockGroup_4
+Used module:                 \TLBuffer_5
+Used module:             \CoherenceManagerWrapper
+Used module:                 \ClockGroupAggregator_5
+Used module:                 \FixedClockBroadcast_5
+Used module:                 \TLInterconnectCoupler_8
+Used module:                     \TLWidthWidget_6
+Used module:                 \TLJbar
+Used module:                 \ClockGroup_5
+Used module:                 \TLBroadcast
+Used module:                     \BroadcastFilter
+Used module:                     \TLBroadcastTracker_3
+Used module:                         \Queue_39
+Used module:                     \TLBroadcastTracker_2
+Used module:                         \Queue_38
+Used module:                     \TLBroadcastTracker_1
+Used module:                         \Queue_37
+Used module:                     \TLBroadcastTracker
+Used module:                         \Queue_36
+Used module:                 \BankBinder
+Used module:             \PeripheryBus_1
+Used module:                 \ClockGroupAggregator_3
+Used module:                 \TLXbar_5
+Used module:                 \TLXbar_4
+Used module:                 \TLFIFOFixer_2
+Used module:                 \FixedClockBroadcast_3
+Used module:                 \TLInterconnectCoupler_6
+Used module:                     \TLFragmenter
+Used module:                         \Repeater
+Used module:                 \ClockGroup_3
+Used module:                 \TLBuffer_4
+Used module:                 \TLBuffer_3
+Used module:                     \Queue
+Used module:                     \Queue_1
+Used module:                 \TLAtomicAutomata_1
+Used module:             \SimpleClockGroupSource
+Used module:             \ClockSinkDomain
+Used module:                 \TLROM
+
+2.2. Analyzing design hierarchy..
+Top module:  \FormalTop
+Used module:     \SimTop
+Used module:         \SimAXIMem
+Used module:             \AXI4RAM
+Used module:                 \DifftestMem2P
+Used module:                     \MemRWHelper
+Used module:             \AXI4Xbar
+Used module:             \AXI4Fragmenter
+Used module:                 \Queue_54
+Used module:                 \Queue_53
+Used module:                 \Queue_52
+Used module:             \AXI4Buffer
+Used module:                 \Queue_48
+Used module:                 \Queue_47
+Used module:                 \Queue_50
+Used module:                 \Queue_51
+Used module:                 \Queue_49
+Used module:         \ExampleFuzzSystem
+Used module:             \TilePRCIDomain
+Used module:                 \TileResetDomain
+Used module:                     \RocketTile
+Used module:                         \TLWidthWidget_8
+Used module:                         \TLWidthWidget_7
+Used module:                         \TLXbar_8
+Used module:                         \PTW
+Used module:                             \OptimizationBarrier_12
+Used module:                             \OptimizationBarrier_13
+Used module:                             \Arbiter
+Used module:                         \Frontend
+Used module:                             \TLB_1
+Used module:                                 \OptimizationBarrier_8
+Used module:                                 \OptimizationBarrier_11
+Used module:                                 \OptimizationBarrier_10
+Used module:                                 \OptimizationBarrier_9
+Used module:                             \ICache
+Used module:                             \ShiftQueue
+Used module:                         \HellaCacheArbiter
+Used module:                         \DCache
+Used module:                             \TLB
+Used module:                                 \OptimizationBarrier
+Used module:                                 \OptimizationBarrier_3
+Used module:                                 \OptimizationBarrier_2
+Used module:                                 \OptimizationBarrier_1
+Used module:                             \DCacheModuleImpl_Anon_1
+Used module:                             \DelayReg_1
+Used module:                             \DelayReg
+Used module:                             \DCacheModuleImpl_Anon_2
+Used module:                             \DCacheDataArray
+Used module:                             \AMOALU
+Used module:                         \Rocket
+Used module:                             \IBuf
+Used module:                                 \RVCExpander
+Used module:                             \MulDiv
+Used module:                             \DelayReg_4
+Used module:                             \DelayReg_3
+Used module:                             \CSRFile
+Used module:                                 \DelayReg_2
+Used module:                             \ALU
+Used module:                             \PlusArgTimeout
+Used module:                         \TLBuffer_6
+Used module:                         \BundleBridgeNexus_6
+Used module:                 \FixedClockBroadcast_6
+Used module:                 \TLBuffer_8
+Used module:                     \Queue_44
+Used module:                     \Queue_43
+Used module:                     \Queue_40
+Used module:                     \Queue_41
+Used module:                     \Queue_42
+Used module:             \BundleBridgeNexus_15
+Used module:             \SystemBus
+Used module:                 \TLXbar
+Used module:                 \ClockGroupAggregator
+Used module:                 \TLFIFOFixer
+Used module:                 \FixedClockBroadcast
+Used module:                 \TLInterconnectCoupler_2
+Used module:                     \TLWidthWidget_2
+Used module:                 \TLInterconnectCoupler
+Used module:                     \TLWidthWidget
+Used module:                 \TLInterconnectCoupler_3
+Used module:                 \ClockGroup
+Used module:             \MemoryBus
+Used module:                 \TLXbar_7
+Used module:                 \TLXbar_6
+Used module:                 \ClockGroupAggregator_4
+Used module:                 \ProbePicker
+Used module:                 \TLFIFOFixer_3
+Used module:                 \FixedClockBroadcast_4
+Used module:                 \TLInterconnectCoupler_7
+Used module:                     \TLWidthWidget_5
+Used module:                     \TLToAXI4
+Used module:                         \Queue_35
+Used module:                         \Queue_34
+Used module:                     \AXI4UserYanker
+Used module:                         \Queue_11
+Used module:                         \Queue_10
+Used module:                         \Queue_9
+Used module:                         \Queue_8
+Used module:                         \Queue_7
+Used module:                         \Queue_6
+Used module:                         \Queue_33
+Used module:                         \Queue_32
+Used module:                         \Queue_5
+Used module:                         \Queue_31
+Used module:                         \Queue_30
+Used module:                         \Queue_29
+Used module:                         \Queue_28
+Used module:                         \Queue_27
+Used module:                         \Queue_26
+Used module:                         \Queue_25
+Used module:                         \Queue_24
+Used module:                         \Queue_23
+Used module:                         \Queue_22
+Used module:                         \Queue_4
+Used module:                         \Queue_21
+Used module:                         \Queue_20
+Used module:                         \Queue_19
+Used module:                         \Queue_18
+Used module:                         \Queue_17
+Used module:                         \Queue_16
+Used module:                         \Queue_15
+Used module:                         \Queue_14
+Used module:                         \Queue_13
+Used module:                         \Queue_12
+Used module:                         \Queue_3
+Used module:                         \Queue_2
+Used module:                     \AXI4IdIndexer
+Used module:                 \ClockGroup_4
+Used module:                 \TLBuffer_5
+Used module:             \CoherenceManagerWrapper
+Used module:                 \ClockGroupAggregator_5
+Used module:                 \FixedClockBroadcast_5
+Used module:                 \TLInterconnectCoupler_8
+Used module:                     \TLWidthWidget_6
+Used module:                 \TLJbar
+Used module:                 \ClockGroup_5
+Used module:                 \TLBroadcast
+Used module:                     \BroadcastFilter
+Used module:                     \TLBroadcastTracker_3
+Used module:                         \Queue_39
+Used module:                     \TLBroadcastTracker_2
+Used module:                         \Queue_38
+Used module:                     \TLBroadcastTracker_1
+Used module:                         \Queue_37
+Used module:                     \TLBroadcastTracker
+Used module:                         \Queue_36
+Used module:                 \BankBinder
+Used module:             \PeripheryBus_1
+Used module:                 \ClockGroupAggregator_3
+Used module:                 \TLXbar_5
+Used module:                 \TLXbar_4
+Used module:                 \TLFIFOFixer_2
+Used module:                 \FixedClockBroadcast_3
+Used module:                 \TLInterconnectCoupler_6
+Used module:                     \TLFragmenter
+Used module:                         \Repeater
+Used module:                 \ClockGroup_3
+Used module:                 \TLBuffer_4
+Used module:                 \TLBuffer_3
+Used module:                     \Queue
+Used module:                     \Queue_1
+Used module:                 \TLAtomicAutomata_1
+Used module:             \SimpleClockGroupSource
+Used module:             \ClockSinkDomain
+Used module:                 \TLROM
+Removing unused module `$paramod$1e0019554db24e403a85d4260c10a25441229a90\plusarg_reader'.
+Removed 1 unused modules.
+Module TilePRCIDomain directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLXbar_8 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLXbar directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLToAXI4 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLInterconnectCoupler_7 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLInterconnectCoupler_6 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLFragmenter directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBuffer_8 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBuffer_3 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBroadcastTracker_3 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBroadcastTracker_2 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBroadcastTracker_1 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBroadcastTracker directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLBroadcast directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLB_1 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TLB directly or indirectly contains formal properties -> setting "keep" attribute.
+Module SystemBus directly or indirectly contains formal properties -> setting "keep" attribute.
+Module SimTop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module SimAXIMem directly or indirectly contains formal properties -> setting "keep" attribute.
+Module ShiftQueue directly or indirectly contains formal properties -> setting "keep" attribute.
+Module RocketTile directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Rocket directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Repeater directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_9 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_8 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_7 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_6 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_54 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_53 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_52 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_51 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_50 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_5 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_49 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_48 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_47 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_44 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_43 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_42 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_41 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_40 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_4 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_39 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_38 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_37 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_36 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_35 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_34 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_33 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_32 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_31 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_30 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_3 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_29 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_28 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_27 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_26 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_25 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_24 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_23 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_22 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_21 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_20 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_2 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_19 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_18 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_17 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_16 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_15 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_14 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_13 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_12 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_11 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_10 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue_1 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Queue directly or indirectly contains formal properties -> setting "keep" attribute.
+Module PeripheryBus_1 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module PTW directly or indirectly contains formal properties -> setting "keep" attribute.
+Module MulDiv directly or indirectly contains formal properties -> setting "keep" attribute.
+Module MemoryBus directly or indirectly contains formal properties -> setting "keep" attribute.
+Module ICache directly or indirectly contains formal properties -> setting "keep" attribute.
+Module IBuf directly or indirectly contains formal properties -> setting "keep" attribute.
+Module HellaCacheArbiter directly or indirectly contains formal properties -> setting "keep" attribute.
+Module Frontend directly or indirectly contains formal properties -> setting "keep" attribute.
+Module FormalTop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module ExampleFuzzSystem directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DelayReg_4 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DelayReg_3 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DelayReg_2 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DelayReg_1 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DelayReg directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DCacheDataArray directly or indirectly contains formal properties -> setting "keep" attribute.
+Module DCache directly or indirectly contains formal properties -> setting "keep" attribute.
+Module CoherenceManagerWrapper directly or indirectly contains formal properties -> setting "keep" attribute.
+Module CSRFile directly or indirectly contains formal properties -> setting "keep" attribute.
+Module AXI4UserYanker directly or indirectly contains formal properties -> setting "keep" attribute.
+Module AXI4RAM directly or indirectly contains formal properties -> setting "keep" attribute.
+Module AXI4Fragmenter directly or indirectly contains formal properties -> setting "keep" attribute.
+Module AXI4Buffer directly or indirectly contains formal properties -> setting "keep" attribute.
+Module TileResetDomain directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== TilePRCIDomain ===
+
+   Number of wires:                174
+   Number of wire bits:           1428
+   Number of public wires:         174
+   Number of public wire bits:    1428
+   Number of ports:                 38
+   Number of port bits:            350
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     FixedClockBroadcast_6           1
+     TLBuffer_8                      1
+     TileResetDomain                 1
+
+=== TLXbar_8 ===
+
+   Number of wires:                175
+   Number of wire bits:           1019
+   Number of public wires:         149
+   Number of public wire bits:     991
+   Number of ports:                 81
+   Number of port bits:            805
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $and                           19
+     $anyinit                       12
+     $anyseq                         1
+     $assume                        13
+     $eq                             1
+     $initstate                      1
+     $logic_not                     12
+     $mux                           22
+     $not                            8
+     $or                            11
+     $reduce_or                      1
+     $shl                            1
+     $sub                            1
+
+=== TLXbar_7 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLXbar_6 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLXbar_5 ===
+
+   Number of wires:                 24
+   Number of wire bits:            232
+   Number of public wires:          24
+   Number of public wire bits:     232
+   Number of ports:                 24
+   Number of port bits:            232
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLXbar_4 ===
+
+   Number of wires:                 34
+   Number of wire bits:            248
+   Number of public wires:          34
+   Number of public wire bits:     248
+   Number of ports:                 34
+   Number of port bits:            248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLXbar ===
+
+   Number of wires:                206
+   Number of wire bits:           1277
+   Number of public wires:         172
+   Number of public wire bits:    1241
+   Number of ports:                 84
+   Number of port bits:            815
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                121
+     $and                           23
+     $anyinit                       12
+     $anyseq                         1
+     $assert                         1
+     $assume                        13
+     $ff                             4
+     $initstate                      1
+     $logic_not                     14
+     $mux                           24
+     $not                            8
+     $or                            15
+     $reduce_or                      1
+     $shl                            2
+     $sub                            1
+     $xor                            1
+
+=== TLWidthWidget_8 ===
+
+   Number of wires:                 18
+   Number of wire bits:            214
+   Number of public wires:          18
+   Number of public wire bits:     214
+   Number of ports:                 18
+   Number of port bits:            214
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLWidthWidget_7 ===
+
+   Number of wires:                 72
+   Number of wire bits:            694
+   Number of public wires:          72
+   Number of public wire bits:     694
+   Number of ports:                 72
+   Number of port bits:            694
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLWidthWidget_6 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLWidthWidget_5 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLWidthWidget_2 ===
+
+   Number of wires:                 68
+   Number of wire bits:            692
+   Number of public wires:          68
+   Number of public wire bits:     692
+   Number of ports:                 68
+   Number of port bits:            692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLWidthWidget ===
+
+   Number of wires:                 34
+   Number of wire bits:            248
+   Number of public wires:          34
+   Number of public wire bits:     248
+   Number of ports:                 34
+   Number of port bits:            248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLToAXI4 ===
+
+   Number of wires:                506
+   Number of wire bits:           1283
+   Number of public wires:         352
+   Number of public wire bits:    1127
+   Number of ports:                 55
+   Number of port bits:            486
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                414
+     $add                           17
+     $and                           68
+     $anyinit                       66
+     $anyseq                         1
+     $assume                        67
+     $eq                            16
+     $ge                             1
+     $initstate                      1
+     $logic_not                     66
+     $mux                           67
+     $ne                             1
+     $not                           13
+     $or                             5
+     $reduce_bool                    2
+     $shl                            4
+     $sub                           17
+     Queue_34                        1
+     Queue_35                        1
+
+=== TLROM ===
+
+   Number of wires:                 16
+   Number of wire bits:            182
+   Number of public wires:          15
+   Number of public wire bits:     181
+   Number of ports:                 12
+   Number of port bits:            111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            2
+     $reduce_or                      1
+
+=== TLJbar ===
+
+   Number of wires:                 68
+   Number of wire bits:            692
+   Number of public wires:          68
+   Number of public wire bits:     692
+   Number of ports:                 68
+   Number of port bits:            692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLInterconnectCoupler_8 ===
+
+   Number of wires:                 68
+   Number of wire bits:            780
+   Number of public wires:          68
+   Number of public wire bits:     780
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     TLWidthWidget_6                 1
+
+=== TLInterconnectCoupler_7 ===
+
+   Number of wires:                312
+   Number of wire bits:           2850
+   Number of public wires:         312
+   Number of public wire bits:    2850
+   Number of ports:                 79
+   Number of port bits:            842
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     AXI4IdIndexer                   1
+     AXI4UserYanker                  1
+     TLToAXI4                        1
+     TLWidthWidget_5                 1
+
+=== TLInterconnectCoupler_6 ===
+
+   Number of wires:                 46
+   Number of wire bits:            452
+   Number of public wires:          46
+   Number of public wire bits:     452
+   Number of ports:                 23
+   Number of port bits:            226
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     TLFragmenter                    1
+
+=== TLInterconnectCoupler_3 ===
+
+   Number of wires:                 68
+   Number of wire bits:            692
+   Number of public wires:          68
+   Number of public wire bits:     692
+   Number of ports:                 68
+   Number of port bits:            692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLInterconnectCoupler_2 ===
+
+   Number of wires:                136
+   Number of wire bits:           1384
+   Number of public wires:         136
+   Number of public wire bits:    1384
+   Number of ports:                 68
+   Number of port bits:            692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     TLWidthWidget_2                 1
+
+=== TLInterconnectCoupler ===
+
+   Number of wires:                 68
+   Number of wire bits:            496
+   Number of public wires:          68
+   Number of public wire bits:     496
+   Number of ports:                 34
+   Number of port bits:            248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     TLWidthWidget                   1
+
+=== TLFragmenter ===
+
+   Number of wires:                134
+   Number of wire bits:            531
+   Number of public wires:         105
+   Number of public wire bits:     500
+   Number of ports:                 23
+   Number of port bits:            226
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 86
+     $and                            3
+     $anyinit                       15
+     $anyseq                         1
+     $assume                        16
+     $gt                             1
+     $initstate                      1
+     $logic_not                     15
+     $mux                           13
+     $not                            8
+     $or                             6
+     $reduce_or                      1
+     $shl                            3
+     $sub                            2
+     Repeater                        1
+
+=== TLFIFOFixer_3 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLFIFOFixer_2 ===
+
+   Number of wires:                 24
+   Number of wire bits:            232
+   Number of public wires:          24
+   Number of public wire bits:     232
+   Number of ports:                 24
+   Number of port bits:            232
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLFIFOFixer ===
+
+   Number of wires:                 68
+   Number of wire bits:            692
+   Number of public wires:          68
+   Number of public wire bits:     692
+   Number of ports:                 68
+   Number of port bits:            692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLBuffer_8 ===
+
+   Number of wires:                150
+   Number of wire bits:           1404
+   Number of public wires:         150
+   Number of public wire bits:    1404
+   Number of ports:                 71
+   Number of port bits:            698
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     Queue_40                        1
+     Queue_41                        1
+     Queue_42                        1
+     Queue_43                        1
+     Queue_44                        1
+
+=== TLBuffer_6 ===
+
+   Number of wires:                 74
+   Number of wire bits:            704
+   Number of public wires:          74
+   Number of public wire bits:     704
+   Number of ports:                 74
+   Number of port bits:            704
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLBuffer_5 ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLBuffer_4 ===
+
+   Number of wires:                 34
+   Number of wire bits:            248
+   Number of public wires:          34
+   Number of public wire bits:     248
+   Number of ports:                 34
+   Number of port bits:            248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== TLBuffer_3 ===
+
+   Number of wires:                 60
+   Number of wire bits:            482
+   Number of public wires:          60
+   Number of public wire bits:     482
+   Number of ports:                 29
+   Number of port bits:            240
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     Queue                           1
+     Queue_1                         1
+
+=== TLBroadcastTracker_3 ===
+
+   Number of wires:                143
+   Number of wire bits:            703
+   Number of public wires:         102
+   Number of public wire bits:     595
+   Number of ports:                 30
+   Number of port bits:            272
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                117
+     $and                            9
+     $anyinit                       24
+     $anyseq                         1
+     $assume                        25
+     $eq                             2
+     $initstate                      1
+     $logic_not                     24
+     $mux                           14
+     $ne                             2
+     $not                            4
+     $or                             9
+     $sub                            1
+     Queue_39                        1
+
+=== TLBroadcastTracker_2 ===
+
+   Number of wires:                143
+   Number of wire bits:            703
+   Number of public wires:         102
+   Number of public wire bits:     595
+   Number of ports:                 30
+   Number of port bits:            272
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                117
+     $and                            9
+     $anyinit                       24
+     $anyseq                         1
+     $assume                        25
+     $eq                             2
+     $initstate                      1
+     $logic_not                     24
+     $mux                           14
+     $ne                             2
+     $not                            4
+     $or                             9
+     $sub                            1
+     Queue_38                        1
+
+=== TLBroadcastTracker_1 ===
+
+   Number of wires:                143
+   Number of wire bits:            703
+   Number of public wires:         102
+   Number of public wire bits:     595
+   Number of ports:                 30
+   Number of port bits:            272
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                117
+     $and                            9
+     $anyinit                       24
+     $anyseq                         1
+     $assume                        25
+     $eq                             2
+     $initstate                      1
+     $logic_not                     24
+     $mux                           14
+     $ne                             2
+     $not                            4
+     $or                             9
+     $sub                            1
+     Queue_37                        1
+
+=== TLBroadcastTracker ===
+
+   Number of wires:                143
+   Number of wire bits:            703
+   Number of public wires:         102
+   Number of public wire bits:     595
+   Number of ports:                 30
+   Number of port bits:            272
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                117
+     $and                            9
+     $anyinit                       24
+     $anyseq                         1
+     $assume                        25
+     $eq                             2
+     $initstate                      1
+     $logic_not                     24
+     $mux                           14
+     $ne                             2
+     $not                            4
+     $or                             9
+     $sub                            1
+     Queue_36                        1
+
+=== TLBroadcast ===
+
+   Number of wires:                695
+   Number of wire bits:           3414
+   Number of public wires:         565
+   Number of public wire bits:    3255
+   Number of ports:                 51
+   Number of port bits:            541
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                511
+     $and                          128
+     $anyinit                       45
+     $anyseq                         1
+     $assume                        46
+     $eq                            24
+     $ge                             1
+     $initstate                      1
+     $logic_not                     47
+     $mux                           95
+     $not                           27
+     $or                            73
+     $reduce_or                      4
+     $shl                           10
+     $sub                            4
+     BroadcastFilter                 1
+     TLBroadcastTracker              1
+     TLBroadcastTracker_1            1
+     TLBroadcastTracker_2            1
+     TLBroadcastTracker_3            1
+
+=== TLB_1 ===
+
+   Number of wires:                567
+   Number of wire bits:           4324
+   Number of public wires:         395
+   Number of public wire bits:    3048
+   Number of ports:                 37
+   Number of port bits:            219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                457
+     $and                           42
+     $anyinit                       63
+     $anyseq                         1
+     $assume                        64
+     $eq                            10
+     $initstate                      1
+     $le                             1
+     $logic_not                     76
+     $lt                             4
+     $mux                          135
+     $not                           16
+     $or                            33
+     $reduce_or                      4
+     $xor                            3
+     OptimizationBarrier_10          1
+     OptimizationBarrier_11          1
+     OptimizationBarrier_8           1
+     OptimizationBarrier_9           1
+
+=== TLB ===
+
+   Number of wires:                695
+   Number of wire bits:           4646
+   Number of public wires:         506
+   Number of public wire bits:    3353
+   Number of ports:                 44
+   Number of port bits:            231
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                540
+     $and                           54
+     $anyinit                       63
+     $anyseq                         1
+     $assume                        64
+     $eq                            26
+     $initstate                      1
+     $le                             1
+     $logic_not                     77
+     $lt                             4
+     $mux                          145
+     $not                           23
+     $or                            65
+     $reduce_or                      7
+     $shl                            1
+     $sub                            1
+     $xor                            3
+     OptimizationBarrier             1
+     OptimizationBarrier_1           1
+     OptimizationBarrier_2           1
+     OptimizationBarrier_3           1
+
+=== TLAtomicAutomata_1 ===
+
+   Number of wires:                 34
+   Number of wire bits:            248
+   Number of public wires:          34
+   Number of public wire bits:     248
+   Number of ports:                 34
+   Number of port bits:            248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== SystemBus ===
+
+   Number of wires:                472
+   Number of wire bits:           4020
+   Number of public wires:         472
+   Number of public wire bits:    4020
+   Number of ports:                110
+   Number of port bits:            841
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     ClockGroup                      1
+     ClockGroupAggregator            1
+     FixedClockBroadcast             1
+     TLFIFOFixer                     1
+     TLInterconnectCoupler           1
+     TLInterconnectCoupler_2         1
+     TLInterconnectCoupler_3         1
+     TLXbar                          1
+
+=== SimpleClockGroupSource ===
+
+   Number of wires:                 14
+   Number of wire bits:             14
+   Number of public wires:          14
+   Number of public wire bits:      14
+   Number of ports:                 14
+   Number of port bits:             14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== SimTop ===
+
+   Number of wires:                 88
+   Number of wire bits:           1190
+   Number of public wires:          82
+   Number of public wire bits:    1121
+   Number of ports:                 13
+   Number of port bits:            342
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $add                            1
+     $anyinit                        3
+     $anyseq                         1
+     $assume                         4
+     $initstate                      1
+     $logic_not                      3
+     $mux                            1
+     $not                            1
+     ExampleFuzzSystem               1
+     SimAXIMem                       1
+
+=== SimAXIMem ===
+
+   Number of wires:                228
+   Number of wire bits:           1980
+   Number of public wires:         228
+   Number of public wire bits:    1980
+   Number of ports:                 31
+   Number of port bits:            260
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     AXI4Buffer                      1
+     AXI4Fragmenter                  1
+     AXI4RAM                         1
+     AXI4Xbar                        1
+
+=== ShiftQueue ===
+
+   Number of wires:                346
+   Number of wire bits:           2173
+   Number of public wires:         195
+   Number of public wire bits:    1392
+   Number of ports:                 17
+   Number of port bits:            161
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                361
+     $and                           11
+     $anyinit                       90
+     $anyseq                         1
+     $assume                        91
+     $initstate                      1
+     $logic_not                     90
+     $mux                           65
+     $not                            6
+     $or                             6
+
+=== RocketTile ===
+
+   Number of wires:                644
+   Number of wire bits:           5634
+   Number of public wires:         644
+   Number of public wire bits:    5634
+   Number of ports:                 39
+   Number of port bits:            354
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     BundleBridgeNexus_6             1
+     DCache                          1
+     Frontend                        1
+     HellaCacheArbiter               1
+     PTW                             1
+     Rocket                          1
+     TLBuffer_6                      1
+     TLWidthWidget_7                 1
+     TLWidthWidget_8                 1
+     TLXbar_8                        1
+
+=== Rocket ===
+
+   Number of wires:               2672
+   Number of wire bits:          36433
+   Number of public wires:        1718
+   Number of public wire bits:   25875
+   Number of ports:                 56
+   Number of port bits:            496
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2179
+     $add                            1
+     $and                          141
+     $anyinit                      381
+     $anyseq                         1
+     $assume                       382
+     $eq                           147
+     $initstate                      1
+     $logic_not                    391
+     $lt                             1
+     $mux                          395
+     $ne                             4
+     $not                           53
+     $or                           142
+     $reduce_and                    91
+     $reduce_bool                   10
+     $reduce_or                     25
+     $shl                            2
+     $shr                            3
+     $xor                            1
+     ALU                             1
+     CSRFile                         1
+     DelayReg_3                      1
+     DelayReg_4                      1
+     IBuf                            1
+     MulDiv                          1
+     PlusArgTimeout                  1
+
+=== Repeater ===
+
+   Number of wires:                 72
+   Number of wire bits:            300
+   Number of public wires:          45
+   Number of public wire bits:     235
+   Number of ports:                 16
+   Number of port bits:             92
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $and                            5
+     $anyinit                       15
+     $anyseq                         1
+     $assume                        16
+     $initstate                      1
+     $logic_not                     15
+     $mux                           10
+     $not                            3
+     $or                             2
+
+=== RVCExpander ===
+
+   Number of wires:                278
+   Number of wire bits:           3675
+   Number of public wires:         232
+   Number of public wire bits:    3629
+   Number of ports:                  8
+   Number of port bits:             82
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                188
+     $eq                            42
+     $logic_not                      2
+     $mux                          137
+     $ne                             1
+     $or                             2
+     $reduce_or                      4
+
+=== Queue_9 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_8 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_7 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_6 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_54 ===
+
+   Number of wires:                 65
+   Number of wire bits:            618
+   Number of public wires:          47
+   Number of public wire bits:     397
+   Number of ports:                 12
+   Number of port bits:            152
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $and                            2
+     $anyinit                        3
+     $anyseq                         4
+     $assume                         7
+     $initstate                      1
+     $logic_not                      6
+     $mem_v2                         3
+     $mux                           12
+     $ne                             1
+     $not                            2
+     $or                             1
+
+=== Queue_53 ===
+
+   Number of wires:                 91
+   Number of wire bits:            430
+   Number of public wires:          67
+   Number of public wire bits:     287
+   Number of ports:                 16
+   Number of port bits:            104
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                            2
+     $anyinit                        3
+     $anyseq                         6
+     $assume                         9
+     $initstate                      1
+     $logic_not                      8
+     $mem_v2                         5
+     $mux                           16
+     $ne                             1
+     $not                            2
+     $or                             1
+
+=== Queue_52 ===
+
+   Number of wires:                 91
+   Number of wire bits:            430
+   Number of public wires:          67
+   Number of public wire bits:     287
+   Number of ports:                 16
+   Number of port bits:            104
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $and                            2
+     $anyinit                        3
+     $anyseq                         6
+     $assume                         9
+     $initstate                      1
+     $logic_not                      8
+     $mem_v2                         5
+     $mux                           16
+     $ne                             1
+     $not                            2
+     $or                             1
+
+=== Queue_51 ===
+
+   Number of wires:                125
+   Number of wire bits:            724
+   Number of public wires:          77
+   Number of public wire bits:     412
+   Number of ports:                 15
+   Number of port bits:            149
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 86
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         7
+     $assume                        20
+     $eq                             1
+     $initstate                      1
+     $logic_not                     19
+     $mem_v2                         5
+     $mux                           13
+     $ne                             1
+     $not                            4
+
+=== Queue_50 ===
+
+   Number of wires:                 96
+   Number of wire bits:            399
+   Number of public wires:          58
+   Number of public wire bits:     228
+   Number of ports:                 12
+   Number of port bits:             80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         5
+     $assume                        16
+     $eq                             1
+     $initstate                      1
+     $logic_not                     15
+     $mem_v2                         3
+     $mux                           11
+     $ne                             1
+     $not                            4
+
+=== Queue_5 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_49 ===
+
+   Number of wires:                 96
+   Number of wire bits:            128
+   Number of public wires:          58
+   Number of public wire bits:      78
+   Number of ports:                 12
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         5
+     $assume                        16
+     $eq                             1
+     $initstate                      1
+     $logic_not                     15
+     $mem_v2                         3
+     $mux                           11
+     $ne                             1
+     $not                            4
+
+=== Queue_48 ===
+
+   Number of wires:                 81
+   Number of wire bits:            704
+   Number of public wires:          48
+   Number of public wire bits:     398
+   Number of ports:                 10
+   Number of port bits:            150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         4
+     $assume                        14
+     $eq                             1
+     $initstate                      1
+     $logic_not                     13
+     $mem_v2                         2
+     $mux                           10
+     $ne                             1
+     $not                            4
+
+=== Queue_47 ===
+
+   Number of wires:                 96
+   Number of wire bits:            399
+   Number of public wires:          58
+   Number of public wire bits:     228
+   Number of ports:                 12
+   Number of port bits:             80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         5
+     $assume                        16
+     $eq                             1
+     $initstate                      1
+     $logic_not                     15
+     $mem_v2                         3
+     $mux                           11
+     $ne                             1
+     $not                            4
+
+=== Queue_44 ===
+
+   Number of wires:                 64
+   Number of wire bits:             73
+   Number of public wires:          36
+   Number of public wire bits:      41
+   Number of ports:                  7
+   Number of port bits:              9
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $add                            2
+     $and                            3
+     $anyinit                        9
+     $anyseq                         3
+     $assume                        12
+     $eq                             1
+     $initstate                      1
+     $logic_not                     11
+     $mem_v2                         1
+     $mux                            9
+     $ne                             1
+     $not                            4
+
+=== Queue_43 ===
+
+   Number of wires:                141
+   Number of wire bits:            980
+   Number of public wires:          88
+   Number of public wire bits:     593
+   Number of ports:                 18
+   Number of port bits:            220
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 93
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         8
+     $assume                        22
+     $eq                             1
+     $initstate                      1
+     $logic_not                     21
+     $mem_v2                         6
+     $mux                           14
+     $ne                             1
+     $not                            4
+
+=== Queue_42 ===
+
+   Number of wires:                109
+   Number of wire bits:            417
+   Number of public wires:          66
+   Number of public wire bits:     238
+   Number of ports:                 12
+   Number of port bits:             79
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 79
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         6
+     $assume                        18
+     $eq                             1
+     $initstate                      1
+     $logic_not                     17
+     $mem_v2                         4
+     $mux                           12
+     $ne                             1
+     $not                            4
+
+=== Queue_41 ===
+
+   Number of wires:                171
+   Number of wire bits:            731
+   Number of public wires:         108
+   Number of public wire bits:     458
+   Number of ports:                 22
+   Number of port bits:            162
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                107
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                        10
+     $assume                        26
+     $eq                             1
+     $initstate                      1
+     $logic_not                     25
+     $mem_v2                         8
+     $mux                           16
+     $ne                             1
+     $not                            4
+
+=== Queue_40 ===
+
+   Number of wires:                156
+   Number of wire bits:           1051
+   Number of public wires:          98
+   Number of public wire bits:     638
+   Number of ports:                 20
+   Number of port bits:            236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                100
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         9
+     $assume                        24
+     $eq                             1
+     $initstate                      1
+     $logic_not                     23
+     $mem_v2                         7
+     $mux                           15
+     $ne                             1
+     $not                            4
+
+=== Queue_4 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_39 ===
+
+   Number of wires:                 81
+   Number of wire bits:            704
+   Number of public wires:          48
+   Number of public wire bits:     398
+   Number of ports:                 10
+   Number of port bits:            150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         4
+     $assume                        14
+     $eq                             1
+     $initstate                      1
+     $logic_not                     13
+     $mem_v2                         2
+     $mux                           10
+     $ne                             1
+     $not                            4
+
+=== Queue_38 ===
+
+   Number of wires:                 81
+   Number of wire bits:            704
+   Number of public wires:          48
+   Number of public wire bits:     398
+   Number of ports:                 10
+   Number of port bits:            150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         4
+     $assume                        14
+     $eq                             1
+     $initstate                      1
+     $logic_not                     13
+     $mem_v2                         2
+     $mux                           10
+     $ne                             1
+     $not                            4
+
+=== Queue_37 ===
+
+   Number of wires:                 81
+   Number of wire bits:            704
+   Number of public wires:          48
+   Number of public wire bits:     398
+   Number of ports:                 10
+   Number of port bits:            150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         4
+     $assume                        14
+     $eq                             1
+     $initstate                      1
+     $logic_not                     13
+     $mem_v2                         2
+     $mux                           10
+     $ne                             1
+     $not                            4
+
+=== Queue_36 ===
+
+   Number of wires:                 81
+   Number of wire bits:            704
+   Number of public wires:          48
+   Number of public wire bits:     398
+   Number of ports:                 10
+   Number of port bits:            150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         4
+     $assume                        14
+     $eq                             1
+     $initstate                      1
+     $logic_not                     13
+     $mem_v2                         2
+     $mux                           10
+     $ne                             1
+     $not                            4
+
+=== Queue_35 ===
+
+   Number of wires:                129
+   Number of wire bits:            509
+   Number of public wires:          96
+   Number of public wire bits:     345
+   Number of ports:                 21
+   Number of port bits:            120
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $and                            2
+     $anyinit                        3
+     $anyseq                         9
+     $assume                        12
+     $initstate                      1
+     $logic_not                     11
+     $mem_v2                         8
+     $mux                           22
+     $ne                             1
+     $not                            2
+     $or                             1
+
+=== Queue_34 ===
+
+   Number of wires:                 65
+   Number of wire bits:            618
+   Number of public wires:          47
+   Number of public wire bits:     397
+   Number of ports:                 12
+   Number of port bits:            152
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $and                            2
+     $anyinit                        3
+     $anyseq                         4
+     $assume                         7
+     $initstate                      1
+     $logic_not                      6
+     $mem_v2                         3
+     $mux                           12
+     $ne                             1
+     $not                            2
+     $or                             1
+
+=== Queue_33 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_32 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_31 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_30 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_3 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_29 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_28 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_27 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_26 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_25 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_24 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_23 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_22 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_21 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_20 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_2 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_19 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_18 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_17 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_16 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_15 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_14 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_13 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_12 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_11 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_10 ===
+
+   Number of wires:                 49
+   Number of wire bits:             94
+   Number of public wires:          34
+   Number of public wire bits:      64
+   Number of ports:                 10
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and                            2
+     $anyinit                        3
+     $anyseq                         3
+     $assume                         6
+     $initstate                      1
+     $logic_not                      5
+     $mem_v2                         2
+     $mux                            5
+     $ne                             1
+     $not                            2
+
+=== Queue_1 ===
+
+   Number of wires:                162
+   Number of wire bits:            711
+   Number of public wires:         101
+   Number of public wire bits:     443
+   Number of ports:                 17
+   Number of port bits:            152
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         8
+     $assume                        26
+     $eq                             1
+     $initstate                      1
+     $logic_not                     25
+     $mem_v2                         8
+     $mux                           14
+     $ne                             1
+     $not                            4
+
+=== Queue ===
+
+   Number of wires:                111
+   Number of wire bits:            443
+   Number of public wires:          68
+   Number of public wire bits:     258
+   Number of ports:                 14
+   Number of port bits:             90
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 79
+     $add                            2
+     $and                            4
+     $anyinit                        9
+     $anyseq                         6
+     $assume                        18
+     $eq                             1
+     $initstate                      1
+     $logic_not                     17
+     $mem_v2                         4
+     $mux                           12
+     $ne                             1
+     $not                            4
+
+=== ProbePicker ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== PlusArgTimeout ===
+
+   Number of wires:                  3
+   Number of wire bits:             34
+   Number of public wires:           3
+   Number of public wire bits:      34
+   Number of ports:                  3
+   Number of port bits:             34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== PeripheryBus_1 ===
+
+   Number of wires:                262
+   Number of wire bits:           1940
+   Number of public wires:         262
+   Number of public wire bits:    1940
+   Number of ports:                 36
+   Number of port bits:            242
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     ClockGroupAggregator_3          1
+     ClockGroup_3                    1
+     FixedClockBroadcast_3           1
+     TLAtomicAutomata_1              1
+     TLBuffer_3                      1
+     TLBuffer_4                      1
+     TLFIFOFixer_2                   1
+     TLInterconnectCoupler_6         1
+     TLXbar_4                        1
+     TLXbar_5                        1
+
+=== PTW ===
+
+   Number of wires:                451
+   Number of wire bits:           2402
+   Number of public wires:         318
+   Number of public wire bits:    2209
+   Number of ports:                 62
+   Number of port bits:            358
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                359
+     $add                            1
+     $and                           29
+     $anyinit                       66
+     $anyseq                         1
+     $assume                        67
+     $eq                            10
+     $initstate                      1
+     $le                             2
+     $logic_not                     69
+     $lt                             1
+     $mux                           79
+     $ne                             2
+     $not                           16
+     $or                             8
+     $reduce_bool                    4
+     Arbiter                         1
+     OptimizationBarrier_12          1
+     OptimizationBarrier_13          1
+
+=== OptimizationBarrier_9 ===
+
+   Number of wires:                 20
+   Number of wire bits:             58
+   Number of public wires:          20
+   Number of public wire bits:      58
+   Number of ports:                 20
+   Number of port bits:             58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_8 ===
+
+   Number of wires:                  4
+   Number of wire bits:             42
+   Number of public wires:           4
+   Number of public wire bits:      42
+   Number of ports:                  4
+   Number of port bits:             42
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_3 ===
+
+   Number of wires:                 20
+   Number of wire bits:             58
+   Number of public wires:          20
+   Number of public wire bits:      58
+   Number of ports:                 20
+   Number of port bits:             58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_2 ===
+
+   Number of wires:                 34
+   Number of wire bits:             72
+   Number of public wires:          34
+   Number of public wire bits:      72
+   Number of ports:                 34
+   Number of port bits:             72
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_13 ===
+
+   Number of wires:                 20
+   Number of wire bits:            106
+   Number of public wires:          20
+   Number of public wire bits:     106
+   Number of ports:                 20
+   Number of port bits:            106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_12 ===
+
+   Number of wires:                  4
+   Number of wire bits:              8
+   Number of public wires:           4
+   Number of public wire bits:       8
+   Number of ports:                  4
+   Number of port bits:              8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_11 ===
+
+   Number of wires:                 16
+   Number of wire bits:             54
+   Number of public wires:          16
+   Number of public wire bits:      54
+   Number of ports:                 16
+   Number of port bits:             54
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_10 ===
+
+   Number of wires:                 20
+   Number of wire bits:             58
+   Number of public wires:          20
+   Number of public wire bits:      58
+   Number of ports:                 20
+   Number of port bits:             58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier_1 ===
+
+   Number of wires:                 34
+   Number of wire bits:             72
+   Number of public wires:          34
+   Number of public wire bits:      72
+   Number of ports:                 34
+   Number of port bits:             72
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== OptimizationBarrier ===
+
+   Number of wires:                  4
+   Number of wire bits:             42
+   Number of public wires:           4
+   Number of public wire bits:      42
+   Number of ports:                  4
+   Number of port bits:             42
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== MulDiv ===
+
+   Number of wires:                212
+   Number of wire bits:           3365
+   Number of public wires:         143
+   Number of public wire bits:    2554
+   Number of ports:                 14
+   Number of port bits:            214
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                173
+     $add                            2
+     $and                            9
+     $anyinit                       27
+     $anyseq                         1
+     $assume                        28
+     $eq                             9
+     $initstate                      1
+     $logic_not                     28
+     $mul                            1
+     $mux                           49
+     $ne                             1
+     $not                            6
+     $or                             3
+     $reduce_and                     3
+     $reduce_or                      3
+     $sub                            2
+
+=== MemoryBus ===
+
+   Number of wires:                312
+   Number of wire bits:           3262
+   Number of public wires:         312
+   Number of public wire bits:    3262
+   Number of ports:                 49
+   Number of port bits:            456
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     ClockGroupAggregator_4          1
+     ClockGroup_4                    1
+     FixedClockBroadcast_4           1
+     ProbePicker                     1
+     TLBuffer_5                      1
+     TLFIFOFixer_3                   1
+     TLInterconnectCoupler_7         1
+     TLXbar_6                        1
+     TLXbar_7                        1
+
+=== MemRWHelper ===
+
+   Number of wires:                 47
+   Number of wire bits:           1717
+   Number of public wires:          22
+   Number of public wire bits:     705
+   Number of ports:                  8
+   Number of port bits:            323
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $and                            2
+     $anyseq                        11
+     $assume                         1
+     $eq                             1
+     $ff                             1
+     $logic_and                      1
+     $mem_v2                         3
+     $mux                           14
+     $not                            2
+     $or                             1
+
+=== ICache ===
+
+   Number of wires:                271
+   Number of wire bits:           1617
+   Number of public wires:         168
+   Number of public wire bits:     969
+   Number of ports:                 20
+   Number of port bits:            218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                237
+     $and                           23
+     $anyinit                       42
+     $anyseq                         6
+     $assume                        53
+     $eq                             1
+     $gt                             1
+     $initstate                      1
+     $logic_not                     52
+     $mem_v2                         3
+     $mux                           28
+     $not                           15
+     $or                             8
+     $shl                            2
+     $shr                            1
+     $sub                            1
+
+=== IBuf ===
+
+   Number of wires:                172
+   Number of wire bits:           1762
+   Number of public wires:         130
+   Number of public wire bits:    1580
+   Number of ports:                 25
+   Number of port bits:            208
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                128
+     $add                            4
+     $and                           10
+     $anyinit                       18
+     $anyseq                         1
+     $assume                        19
+     $ge                             3
+     $gt                             1
+     $initstate                      1
+     $logic_not                     18
+     $lt                             1
+     $mux                           26
+     $not                            5
+     $or                             8
+     $shl                            4
+     $shr                            1
+     $sub                            7
+     RVCExpander                     1
+
+=== HellaCacheArbiter ===
+
+   Number of wires:                 90
+   Number of wire bits:            698
+   Number of public wires:          80
+   Number of public wire bits:     688
+   Number of ports:                 65
+   Number of port bits:            659
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $and                            5
+     $anyinit                        6
+     $anyseq                         1
+     $assume                         7
+     $initstate                      1
+     $logic_not                      6
+     $mux                            9
+     $not                            4
+     $or                             1
+
+=== Frontend ===
+
+   Number of wires:                301
+   Number of wire bits:           1814
+   Number of public wires:         218
+   Number of public wire bits:    1650
+   Number of ports:                 52
+   Number of port bits:            410
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                199
+     $add                            1
+     $and                           20
+     $anyinit                       39
+     $anyseq                         1
+     $assume                        40
+     $gt                             1
+     $initstate                      1
+     $logic_not                     39
+     $mux                           16
+     $not                           20
+     $or                            17
+     $sub                            1
+     ICache                          1
+     ShiftQueue                      1
+     TLB_1                           1
+
+=== FormalTop ===
+
+   Number of wires:                 15
+   Number of wire bits:            344
+   Number of public wires:          15
+   Number of public wire bits:     344
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $anyseq                         1
+     $ff                             1
+     SimTop                          1
+
+=== FixedClockBroadcast_6 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== FixedClockBroadcast_5 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== FixedClockBroadcast_4 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== FixedClockBroadcast_3 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== FixedClockBroadcast ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  8
+   Number of port bits:              8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ExampleFuzzSystem ===
+
+   Number of wires:                386
+   Number of wire bits:           2860
+   Number of public wires:         386
+   Number of public wire bits:    2860
+   Number of ports:                 31
+   Number of port bits:            260
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     BundleBridgeNexus_15            1
+     ClockSinkDomain                 1
+     CoherenceManagerWrapper         1
+     MemoryBus                       1
+     PeripheryBus_1                  1
+     SimpleClockGroupSource          1
+     SystemBus                       1
+     TilePRCIDomain                  1
+
+=== DifftestMem2P ===
+
+   Number of wires:                 22
+   Number of wire bits:            910
+   Number of public wires:          22
+   Number of public wire bits:     910
+   Number of ports:                  9
+   Number of port bits:            324
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and                            2
+     $not                            1
+     MemRWHelper                     1
+
+=== DelayReg_4 ===
+
+   Number of wires:                 49
+   Number of wire bits:            451
+   Number of public wires:          31
+   Number of public wire bits:     366
+   Number of ports:                 10
+   Number of port bits:            144
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 44
+     $anyinit                       12
+     $anyseq                         1
+     $assume                        13
+     $initstate                      1
+     $logic_not                     12
+     $mux                            4
+     $not                            1
+
+=== DelayReg_3 ===
+
+   Number of wires:                104
+   Number of wire bits:            776
+   Number of public wires:          66
+   Number of public wire bits:     626
+   Number of ports:                 20
+   Number of port bits:            244
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 94
+     $anyinit                       27
+     $anyseq                         1
+     $assume                        28
+     $initstate                      1
+     $logic_not                     27
+     $mux                            9
+     $not                            1
+
+=== DelayReg_2 ===
+
+   Number of wires:                 60
+   Number of wire bits:            996
+   Number of public wires:          38
+   Number of public wire bits:     818
+   Number of ports:                 12
+   Number of port bits:            324
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     $anyinit                       15
+     $anyseq                         1
+     $assume                        16
+     $initstate                      1
+     $logic_not                     15
+     $mux                            5
+     $not                            1
+
+=== DelayReg_1 ===
+
+   Number of wires:                121
+   Number of wire bits:           1983
+   Number of public wires:          71
+   Number of public wire bits:    1534
+   Number of ports:                 10
+   Number of port bits:            276
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                124
+     $anyinit                       36
+     $anyseq                         1
+     $assume                        37
+     $initstate                      1
+     $logic_not                     36
+     $mux                           12
+     $not                            1
+
+=== DelayReg ===
+
+   Number of wires:                 27
+   Number of wire bits:             27
+   Number of public wires:          17
+   Number of public wire bits:      17
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $anyinit                        6
+     $anyseq                         1
+     $assume                         7
+     $initstate                      1
+     $logic_not                      6
+     $mux                            2
+     $not                            1
+
+=== DCacheModuleImpl_Anon_2 ===
+
+   Number of wires:                 33
+   Number of wire bits:            516
+   Number of public wires:          30
+   Number of public wire bits:     513
+   Number of ports:                 26
+   Number of port bits:            375
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            1
+     $mux                            8
+     $not                            3
+     $or                             3
+
+=== DCacheModuleImpl_Anon_1 ===
+
+   Number of wires:                 55
+   Number of wire bits:            803
+   Number of public wires:          49
+   Number of public wire bits:     797
+   Number of ports:                 37
+   Number of port bits:            517
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $mux                           15
+     $not                            3
+     $or                             8
+
+=== DCacheDataArray ===
+
+   Number of wires:                223
+   Number of wire bits:            974
+   Number of public wires:         100
+   Number of public wire bits:     499
+   Number of ports:                  8
+   Number of port bits:            145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                183
+     $and                           10
+     $anyinit                       16
+     $anyseq                        17
+     $assume                        49
+     $initstate                      1
+     $logic_not                     48
+     $mem_v2                         8
+     $mux                           32
+     $not                            2
+
+=== DCache ===
+
+   Number of wires:               1853
+   Number of wire bits:          11049
+   Number of public wires:        1285
+   Number of public wire bits:    9260
+   Number of ports:                 99
+   Number of port bits:            914
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1575
+     $add                            3
+     $and                          139
+     $anyinit                      257
+     $anyseq                         3
+     $assume                       260
+     $eq                           100
+     $ge                             4
+     $gt                             5
+     $initstate                      1
+     $logic_not                    268
+     $lt                             1
+     $mem_v2                         1
+     $mux                          309
+     $not                           54
+     $or                           145
+     $reduce_bool                    1
+     $reduce_or                      3
+     $shl                            6
+     $sub                            6
+     $xor                            2
+     AMOALU                          1
+     DCacheDataArray                 1
+     DCacheModuleImpl_Anon_1         1
+     DCacheModuleImpl_Anon_2         1
+     DelayReg                        1
+     DelayReg_1                      1
+     TLB                             1
+
+=== CoherenceManagerWrapper ===
+
+   Number of wires:                262
+   Number of wire bits:           2578
+   Number of public wires:         262
+   Number of public wire bits:    2578
+   Number of ports:                 57
+   Number of port bits:            547
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     BankBinder                      1
+     ClockGroupAggregator_5          1
+     ClockGroup_5                    1
+     FixedClockBroadcast_5           1
+     TLBroadcast                     1
+     TLInterconnectCoupler_8         1
+     TLJbar                          1
+
+=== ClockSinkDomain ===
+
+   Number of wires:                 26
+   Number of wire bits:            224
+   Number of public wires:          26
+   Number of public wire bits:     224
+   Number of ports:                 14
+   Number of port bits:            113
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     TLROM                           1
+
+=== ClockGroup_5 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroup_4 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroup_3 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroupAggregator_5 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  8
+   Number of port bits:              8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroupAggregator_4 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroupAggregator_3 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  8
+   Number of port bits:              8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroupAggregator ===
+
+   Number of wires:                 24
+   Number of wire bits:             24
+   Number of public wires:          24
+   Number of public wire bits:      24
+   Number of ports:                 24
+   Number of port bits:             24
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== ClockGroup ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== CSRFile ===
+
+   Number of wires:               1827
+   Number of wire bits:          22545
+   Number of public wires:        1220
+   Number of public wire bits:   19532
+   Number of ports:                 96
+   Number of port bits:           2047
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1334
+     $add                            7
+     $and                           48
+     $anyinit                      159
+     $anyseq                         1
+     $assume                       160
+     $eq                           135
+     $ge                             5
+     $gt                             2
+     $initstate                      1
+     $le                             3
+     $logic_not                    161
+     $lt                             3
+     $mux                          317
+     $not                           41
+     $or                           235
+     $reduce_and                    46
+     $reduce_or                      4
+     $shr                            5
+     DelayReg_2                      1
+
+=== BundleBridgeNexus_6 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== BundleBridgeNexus_15 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== BroadcastFilter ===
+
+   Number of wires:                 14
+   Number of wire bits:             78
+   Number of public wires:          14
+   Number of public wire bits:      78
+   Number of ports:                 14
+   Number of port bits:             78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== BankBinder ===
+
+   Number of wires:                 34
+   Number of wire bits:            390
+   Number of public wires:          34
+   Number of public wire bits:     390
+   Number of ports:                 34
+   Number of port bits:            390
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== Arbiter ===
+
+   Number of wires:                 18
+   Number of wire bits:             96
+   Number of public wires:          18
+   Number of public wire bits:      96
+   Number of ports:                 17
+   Number of port bits:             95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $and                            1
+     $mux                            3
+     $not                            1
+     $or                             2
+
+=== AXI4Xbar ===
+
+   Number of wires:                 64
+   Number of wire bits:            522
+   Number of public wires:          64
+   Number of public wire bits:     522
+   Number of ports:                 60
+   Number of port bits:            518
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== AXI4UserYanker ===
+
+   Number of wires:                750
+   Number of wire bits:           2036
+   Number of public wires:         670
+   Number of public wire bits:    1956
+   Number of ports:                 68
+   Number of port bits:            550
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                274
+     $and                           88
+     $eq                            60
+     $mux                           90
+     $shl                            4
+     Queue_10                        1
+     Queue_11                        1
+     Queue_12                        1
+     Queue_13                        1
+     Queue_14                        1
+     Queue_15                        1
+     Queue_16                        1
+     Queue_17                        1
+     Queue_18                        1
+     Queue_19                        1
+     Queue_2                         1
+     Queue_20                        1
+     Queue_21                        1
+     Queue_22                        1
+     Queue_23                        1
+     Queue_24                        1
+     Queue_25                        1
+     Queue_26                        1
+     Queue_27                        1
+     Queue_28                        1
+     Queue_29                        1
+     Queue_3                         1
+     Queue_30                        1
+     Queue_31                        1
+     Queue_32                        1
+     Queue_33                        1
+     Queue_4                         1
+     Queue_5                         1
+     Queue_6                         1
+     Queue_7                         1
+     Queue_8                         1
+     Queue_9                         1
+
+=== AXI4RAM ===
+
+   Number of wires:                194
+   Number of wire bits:           1701
+   Number of public wires:         149
+   Number of public wire bits:    1587
+   Number of ports:                 27
+   Number of port bits:            236
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                141
+     $and                            7
+     $anyinit                       33
+     $anyseq                         1
+     $assume                        34
+     $initstate                      1
+     $logic_not                     35
+     $mux                           20
+     $not                            5
+     $or                             4
+     DifftestMem2P                   1
+
+=== AXI4IdIndexer ===
+
+   Number of wires:                 76
+   Number of wire bits:            582
+   Number of public wires:          76
+   Number of public wire bits:     582
+   Number of ports:                 76
+   Number of port bits:            582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== AXI4Fragmenter ===
+
+   Number of wires:                509
+   Number of wire bits:           3005
+   Number of public wires:         336
+   Number of public wire bits:    2590
+   Number of ports:                 57
+   Number of port bits:            495
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                415
+     $add                            2
+     $and                           33
+     $anyinit                       72
+     $anyseq                         1
+     $assume                        73
+     $eq                            17
+     $initstate                      1
+     $logic_not                     76
+     $mux                           84
+     $not                           16
+     $or                            27
+     $shl                            7
+     $sub                            3
+     Queue_52                        1
+     Queue_53                        1
+     Queue_54                        1
+
+=== AXI4Buffer ===
+
+   Number of wires:                114
+   Number of wire bits:            950
+   Number of public wires:         114
+   Number of public wire bits:     950
+   Number of ports:                 53
+   Number of port bits:            471
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     Queue_47                        1
+     Queue_48                        1
+     Queue_49                        1
+     Queue_50                        1
+     Queue_51                        1
+
+=== AMOALU ===
+
+   Number of wires:                 62
+   Number of wire bits:           1421
+   Number of public wires:          50
+   Number of public wire bits:    1409
+   Number of ports:                  7
+   Number of port bits:            207
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $add                            1
+     $and                            6
+     $eq                            11
+     $logic_not                      1
+     $lt                             2
+     $mux                           19
+     $not                            3
+     $or                             8
+     $xor                            1
+
+=== ALU ===
+
+   Number of wires:                117
+   Number of wire bits:           5387
+   Number of public wires:         104
+   Number of public wire bits:    5374
+   Number of ports:                  9
+   Number of port bits:            264
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $add                            2
+     $and                            5
+     $eq                             8
+     $ge                             1
+     $logic_not                      2
+     $mux                           14
+     $not                            1
+     $or                            20
+     $sshr                           1
+     $xor                            2
+
+=== TileResetDomain ===
+
+   Number of wires:                 80
+   Number of wire bits:            710
+   Number of public wires:          80
+   Number of public wire bits:     710
+   Number of ports:                 41
+   Number of port bits:            356
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     RocketTile                      1
+
+=== design hierarchy ===
+
+   FormalTop                         1
+     SimTop                          1
+       ExampleFuzzSystem             1
+         BundleBridgeNexus_15        1
+         ClockSinkDomain             1
+           TLROM                     1
+         CoherenceManagerWrapper      1
+           BankBinder                1
+           ClockGroupAggregator_5      1
+           ClockGroup_5              1
+           FixedClockBroadcast_5      1
+           TLBroadcast               1
+             BroadcastFilter         1
+             TLBroadcastTracker      1
+               Queue_36              1
+             TLBroadcastTracker_1      1
+               Queue_37              1
+             TLBroadcastTracker_2      1
+               Queue_38              1
+             TLBroadcastTracker_3      1
+               Queue_39              1
+           TLInterconnectCoupler_8      1
+             TLWidthWidget_6         1
+           TLJbar                    1
+         MemoryBus                   1
+           ClockGroupAggregator_4      1
+           ClockGroup_4              1
+           FixedClockBroadcast_4      1
+           ProbePicker               1
+           TLBuffer_5                1
+           TLFIFOFixer_3             1
+           TLInterconnectCoupler_7      1
+             AXI4IdIndexer           1
+             AXI4UserYanker          1
+               Queue_10              1
+               Queue_11              1
+               Queue_12              1
+               Queue_13              1
+               Queue_14              1
+               Queue_15              1
+               Queue_16              1
+               Queue_17              1
+               Queue_18              1
+               Queue_19              1
+               Queue_2               1
+               Queue_20              1
+               Queue_21              1
+               Queue_22              1
+               Queue_23              1
+               Queue_24              1
+               Queue_25              1
+               Queue_26              1
+               Queue_27              1
+               Queue_28              1
+               Queue_29              1
+               Queue_3               1
+               Queue_30              1
+               Queue_31              1
+               Queue_32              1
+               Queue_33              1
+               Queue_4               1
+               Queue_5               1
+               Queue_6               1
+               Queue_7               1
+               Queue_8               1
+               Queue_9               1
+             TLToAXI4                1
+               Queue_34              1
+               Queue_35              1
+             TLWidthWidget_5         1
+           TLXbar_6                  1
+           TLXbar_7                  1
+         PeripheryBus_1              1
+           ClockGroupAggregator_3      1
+           ClockGroup_3              1
+           FixedClockBroadcast_3      1
+           TLAtomicAutomata_1        1
+           TLBuffer_3                1
+             Queue                   1
+             Queue_1                 1
+           TLBuffer_4                1
+           TLFIFOFixer_2             1
+           TLInterconnectCoupler_6      1
+             TLFragmenter            1
+               Repeater              1
+           TLXbar_4                  1
+           TLXbar_5                  1
+         SimpleClockGroupSource      1
+         SystemBus                   1
+           ClockGroup                1
+           ClockGroupAggregator      1
+           FixedClockBroadcast       1
+           TLFIFOFixer               1
+           TLInterconnectCoupler      1
+             TLWidthWidget           1
+           TLInterconnectCoupler_2      1
+             TLWidthWidget_2         1
+           TLInterconnectCoupler_3      1
+           TLXbar                    1
+         TilePRCIDomain              1
+           FixedClockBroadcast_6      1
+           TLBuffer_8                1
+             Queue_40                1
+             Queue_41                1
+             Queue_42                1
+             Queue_43                1
+             Queue_44                1
+           TileResetDomain           1
+             RocketTile              1
+               BundleBridgeNexus_6      1
+               DCache                1
+                 AMOALU              1
+                 DCacheDataArray      1
+                 DCacheModuleImpl_Anon_1      1
+                 DCacheModuleImpl_Anon_2      1
+                 DelayReg            1
+                 DelayReg_1          1
+                 TLB                 1
+                   OptimizationBarrier      1
+                   OptimizationBarrier_1      1
+                   OptimizationBarrier_2      1
+                   OptimizationBarrier_3      1
+               Frontend              1
+                 ICache              1
+                 ShiftQueue          1
+                 TLB_1               1
+                   OptimizationBarrier_10      1
+                   OptimizationBarrier_11      1
+                   OptimizationBarrier_8      1
+                   OptimizationBarrier_9      1
+               HellaCacheArbiter      1
+               PTW                   1
+                 Arbiter             1
+                 OptimizationBarrier_12      1
+                 OptimizationBarrier_13      1
+               Rocket                1
+                 ALU                 1
+                 CSRFile             1
+                   DelayReg_2        1
+                 DelayReg_3          1
+                 DelayReg_4          1
+                 IBuf                1
+                   RVCExpander       1
+                 MulDiv              1
+                 PlusArgTimeout      1
+               TLBuffer_6            1
+               TLWidthWidget_7       1
+               TLWidthWidget_8       1
+               TLXbar_8              1
+       SimAXIMem                     1
+         AXI4Buffer                  1
+           Queue_47                  1
+           Queue_48                  1
+           Queue_49                  1
+           Queue_50                  1
+           Queue_51                  1
+         AXI4Fragmenter              1
+           Queue_52                  1
+           Queue_53                  1
+           Queue_54                  1
+         AXI4RAM                     1
+           DifftestMem2P             1
+             MemRWHelper             1
+         AXI4Xbar                    1
+
+   Number of wires:              23479
+   Number of wire bits:         191127
+   Number of public wires:       17890
+   Number of public wire bits:  160561
+   Number of ports:               4154
+   Number of port bits:          37042
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13501
+     $add                           74
+     $and                         1105
+     $anyinit                     1947
+     $anyseq                       283
+     $assert                         1
+     $assume                      2288
+     $eq                           642
+     $ff                             6
+     $ge                            15
+     $gt                            11
+     $initstate                     84
+     $le                             7
+     $logic_and                      1
+     $logic_not                   2270
+     $lt                            17
+     $mem_v2                       165
+     $mul                            1
+     $mux                         2757
+     $ne                            70
+     $not                          523
+     $or                           899
+     $reduce_and                   140
+     $reduce_bool                   17
+     $reduce_or                     58
+     $shl                           46
+     $shr                           10
+     $sshr                           1
+     $sub                           50
+     $xor                           13
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module ALU.
+Creating SMT-LIBv2 representation of module AMOALU.
+Creating SMT-LIBv2 representation of module AXI4IdIndexer.
+Creating SMT-LIBv2 representation of module AXI4Xbar.
+Creating SMT-LIBv2 representation of module Arbiter.
+Creating SMT-LIBv2 representation of module BankBinder.
+Creating SMT-LIBv2 representation of module BroadcastFilter.
+Creating SMT-LIBv2 representation of module BundleBridgeNexus_15.
+Creating SMT-LIBv2 representation of module BundleBridgeNexus_6.
+Creating SMT-LIBv2 representation of module Queue_15.
+Creating SMT-LIBv2 representation of module FixedClockBroadcast.
+Creating SMT-LIBv2 representation of module FixedClockBroadcast_3.
+Creating SMT-LIBv2 representation of module FixedClockBroadcast_4.
+Creating SMT-LIBv2 representation of module FixedClockBroadcast_5.
+Creating SMT-LIBv2 representation of module FixedClockBroadcast_6.
+Creating SMT-LIBv2 representation of module ClockGroup.
+Creating SMT-LIBv2 representation of module ClockGroupAggregator.
+Creating SMT-LIBv2 representation of module ClockGroupAggregator_3.
+Creating SMT-LIBv2 representation of module ClockGroupAggregator_4.
+Creating SMT-LIBv2 representation of module ClockGroupAggregator_5.
+Creating SMT-LIBv2 representation of module ClockGroup_3.
+Creating SMT-LIBv2 representation of module ClockGroup_4.
+Creating SMT-LIBv2 representation of module ClockGroup_5.
+Creating SMT-LIBv2 representation of module DCacheDataArray.
+Creating SMT-LIBv2 representation of module DCacheModuleImpl_Anon_1.
+Creating SMT-LIBv2 representation of module DCacheModuleImpl_Anon_2.
+Creating SMT-LIBv2 representation of module DelayReg.
+Creating SMT-LIBv2 representation of module DelayReg_1.
+Creating SMT-LIBv2 representation of module DelayReg_2.
+Creating SMT-LIBv2 representation of module DelayReg_3.
+Creating SMT-LIBv2 representation of module DelayReg_4.
+Creating SMT-LIBv2 representation of module HellaCacheArbiter.
+Creating SMT-LIBv2 representation of module ICache.
+Creating SMT-LIBv2 representation of module MemRWHelper.
+Creating SMT-LIBv2 representation of module MulDiv.
+Creating SMT-LIBv2 representation of module OptimizationBarrier.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_1.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_10.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_11.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_12.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_13.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_2.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_3.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_8.
+Creating SMT-LIBv2 representation of module OptimizationBarrier_9.
+Creating SMT-LIBv2 representation of module PlusArgTimeout.
+Creating SMT-LIBv2 representation of module ProbePicker.
+Creating SMT-LIBv2 representation of module Queue.
+Creating SMT-LIBv2 representation of module Queue_1.
+Creating SMT-LIBv2 representation of module Queue_10.
+Creating SMT-LIBv2 representation of module Queue_11.
+Creating SMT-LIBv2 representation of module Queue_12.
+Creating SMT-LIBv2 representation of module Queue_13.
+Creating SMT-LIBv2 representation of module Queue_14.
+Creating SMT-LIBv2 representation of module Queue_16.
+Creating SMT-LIBv2 representation of module Queue_17.
+Creating SMT-LIBv2 representation of module Queue_18.
+Creating SMT-LIBv2 representation of module Queue_19.
+Creating SMT-LIBv2 representation of module Queue_2.
+Creating SMT-LIBv2 representation of module Queue_20.
+Creating SMT-LIBv2 representation of module Queue_21.
+Creating SMT-LIBv2 representation of module Queue_22.
+Creating SMT-LIBv2 representation of module Queue_23.
+Creating SMT-LIBv2 representation of module Queue_24.
+Creating SMT-LIBv2 representation of module Queue_25.
+Creating SMT-LIBv2 representation of module Queue_26.
+Creating SMT-LIBv2 representation of module Queue_27.
+Creating SMT-LIBv2 representation of module Queue_28.
+Creating SMT-LIBv2 representation of module Queue_29.
+Creating SMT-LIBv2 representation of module Queue_3.
+Creating SMT-LIBv2 representation of module Queue_30.
+Creating SMT-LIBv2 representation of module Queue_31.
+Creating SMT-LIBv2 representation of module Queue_32.
+Creating SMT-LIBv2 representation of module Queue_33.
+Creating SMT-LIBv2 representation of module Queue_34.
+Creating SMT-LIBv2 representation of module Queue_35.
+Creating SMT-LIBv2 representation of module Queue_36.
+Creating SMT-LIBv2 representation of module Queue_37.
+Creating SMT-LIBv2 representation of module Queue_38.
+Creating SMT-LIBv2 representation of module Queue_39.
+Creating SMT-LIBv2 representation of module Queue_4.
+Creating SMT-LIBv2 representation of module Queue_40.
+Creating SMT-LIBv2 representation of module Queue_41.
+Creating SMT-LIBv2 representation of module Queue_42.
+Creating SMT-LIBv2 representation of module Queue_43.
+Creating SMT-LIBv2 representation of module Queue_44.
+Creating SMT-LIBv2 representation of module Queue_47.
+Creating SMT-LIBv2 representation of module Queue_48.
+Creating SMT-LIBv2 representation of module Queue_49.
+Creating SMT-LIBv2 representation of module Queue_5.
+Creating SMT-LIBv2 representation of module Queue_50.
+Creating SMT-LIBv2 representation of module Queue_51.
+Creating SMT-LIBv2 representation of module Queue_52.
+Creating SMT-LIBv2 representation of module Queue_53.
+Creating SMT-LIBv2 representation of module Queue_54.
+Creating SMT-LIBv2 representation of module Queue_6.
+Creating SMT-LIBv2 representation of module Queue_7.
+Creating SMT-LIBv2 representation of module Queue_8.
+Creating SMT-LIBv2 representation of module Queue_9.
+Creating SMT-LIBv2 representation of module RVCExpander.
+Creating SMT-LIBv2 representation of module Repeater.
+Creating SMT-LIBv2 representation of module ShiftQueue.
+Creating SMT-LIBv2 representation of module SimpleClockGroupSource.
+Creating SMT-LIBv2 representation of module TLAtomicAutomata_1.
+Creating SMT-LIBv2 representation of module TLBuffer_4.
+Creating SMT-LIBv2 representation of module TLBuffer_5.
+Creating SMT-LIBv2 representation of module TLBuffer_6.
+Creating SMT-LIBv2 representation of module TLFIFOFixer.
+Creating SMT-LIBv2 representation of module TLFIFOFixer_2.
+Creating SMT-LIBv2 representation of module TLFIFOFixer_3.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler_3.
+Creating SMT-LIBv2 representation of module TLJbar.
+Creating SMT-LIBv2 representation of module TLROM.
+Creating SMT-LIBv2 representation of module TLWidthWidget.
+Creating SMT-LIBv2 representation of module TLWidthWidget_2.
+Creating SMT-LIBv2 representation of module TLWidthWidget_5.
+Creating SMT-LIBv2 representation of module TLWidthWidget_6.
+Creating SMT-LIBv2 representation of module TLWidthWidget_7.
+Creating SMT-LIBv2 representation of module TLWidthWidget_8.
+Creating SMT-LIBv2 representation of module TLXbar.
+Creating SMT-LIBv2 representation of module TLXbar_4.
+Creating SMT-LIBv2 representation of module TLXbar_5.
+Creating SMT-LIBv2 representation of module TLXbar_6.
+Creating SMT-LIBv2 representation of module TLXbar_7.
+Creating SMT-LIBv2 representation of module TLXbar_8.
+Creating SMT-LIBv2 representation of module AXI4Buffer.
+Creating SMT-LIBv2 representation of module AXI4Fragmenter.
+Creating SMT-LIBv2 representation of module AXI4UserYanker.
+Creating SMT-LIBv2 representation of module CSRFile.
+Creating SMT-LIBv2 representation of module ClockSinkDomain.
+Creating SMT-LIBv2 representation of module DifftestMem2P.
+Creating SMT-LIBv2 representation of module IBuf.
+Creating SMT-LIBv2 representation of module PTW.
+Creating SMT-LIBv2 representation of module TLB.
+Creating SMT-LIBv2 representation of module TLB_1.
+Creating SMT-LIBv2 representation of module TLBroadcastTracker.
+Creating SMT-LIBv2 representation of module TLBroadcastTracker_1.
+Creating SMT-LIBv2 representation of module TLBroadcastTracker_2.
+Creating SMT-LIBv2 representation of module TLBroadcastTracker_3.
+Creating SMT-LIBv2 representation of module TLBuffer_3.
+Creating SMT-LIBv2 representation of module TLBuffer_8.
+Creating SMT-LIBv2 representation of module TLFragmenter.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler_2.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler_8.
+Creating SMT-LIBv2 representation of module TLToAXI4.
+Creating SMT-LIBv2 representation of module AXI4RAM.
+Creating SMT-LIBv2 representation of module Frontend.
+Creating SMT-LIBv2 representation of module DCache.
+Creating SMT-LIBv2 representation of module Rocket.
+Creating SMT-LIBv2 representation of module SystemBus.
+Creating SMT-LIBv2 representation of module TLBroadcast.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler_6.
+Creating SMT-LIBv2 representation of module TLInterconnectCoupler_7.
+Creating SMT-LIBv2 representation of module CoherenceManagerWrapper.
+Creating SMT-LIBv2 representation of module MemoryBus.
+Creating SMT-LIBv2 representation of module PeripheryBus_1.
+Creating SMT-LIBv2 representation of module RocketTile.
+Creating SMT-LIBv2 representation of module SimAXIMem.
+Creating SMT-LIBv2 representation of module TileResetDomain.
+Creating SMT-LIBv2 representation of module TilePRCIDomain.
+Creating SMT-LIBv2 representation of module ExampleFuzzSystem.
+Creating SMT-LIBv2 representation of module SimTop.
+Creating SMT-LIBv2 representation of module FormalTop.
+
+End of script. Logfile hash: ca9792268a, CPU: user 0.86s system 0.02s, MEM: 57.06 MB peak
+Yosys 0.51+41 (git sha1 0c689091e, clang++ 18.1.8 -fPIC -O3)
+Time spent: 75% 2x write_smt2 (0 sec), 20% 2x read_rtlil (0 sec), ...
